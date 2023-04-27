@@ -1,7 +1,12 @@
+import Navbar from "@/components/Navbar";
+
 const Projects = () => {
   return (
-    <h1>Contact</h1>
-  )
-}
+    <div>
+      <Navbar active="projetos"></Navbar>
+      <h1>PROJECTS</h1>
+    </div>
+  );
+};
 
-export default Projects
+export default Projects;

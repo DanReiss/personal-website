@@ -1,11 +1,13 @@
-
 import React from "react";
 import Link from "next/link";
+
+import Navbar from "@/components/Navbar";
 
 const Home = () => {
   return (
     <>
-      <h1>Hello World</h1>
+      <Navbar></Navbar>
+      <h1>Home</h1>
     </>
   )
 }
