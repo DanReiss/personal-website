@@ -22,10 +22,10 @@ const Navbar = ({active}) => {
   ]
 
   return (
-    <div className="fixed w-screen flex justify-between align-center bg-dark_gray text-white font-light tracking-widest p-4 px-5">
+    <div className="fixed w-screen z-10 flex justify-between align-center bg-dark_gray text-white font-light tracking-widest p-4 px-5">
       <Link href="/">
         <Image 
-          src={"/logo.svg"} 
+          src={"/icons/logo.svg"} 
           alt="logo D." 
           width={35}
           height={27}>
