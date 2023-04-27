@@ -16,6 +16,14 @@ module.exports = {
     fontFamily:{
       'roboto' : ['var(--font-roboto)', 'sans-serif'],
       'josefin' : ['var(--font-josefin)', 'sans-serif']
+    },
+    colors:{
+      white: '#FFFFF',
+      dark_blue: '#1A1B21',
+      blue: '#004DA7',
+      dark_gray: '#202123',
+      gray: "#292D31",
+      light_gray: "#D9D9D9"
     }
   },
   plugins: [],
