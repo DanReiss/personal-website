@@ -18,7 +18,7 @@ module.exports = {
       'josefin' : ['var(--font-josefin)', 'sans-serif']
     },
     colors:{
-      white: '#FFFFF',
+      white: '#FFFFFF',
       dark_blue: '#1A1B21',
       blue: '#004DA7',
       dark_gray: '#202123',
