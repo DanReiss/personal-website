@@ -1,12 +1,13 @@
-import Navbar from "@/components/Navbar";
+import React from 'react';
+import Navbar from '@/components/Navbar.jsx';
 
-const Contact = () => {
+function Contact() {
   return (
     <div>
-      <Navbar active="contato"></Navbar>
+      <Navbar active="contato" />
       <h1>CONTACT</h1>
     </div>
   );
-};
+}
 
 export default Contact;

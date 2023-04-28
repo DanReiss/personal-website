@@ -13,18 +13,18 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
-    fontFamily:{
-      'roboto' : ['var(--font-roboto)', 'sans-serif'],
-      'josefin' : ['var(--font-josefin)', 'sans-serif']
+    fontFamily: {
+      roboto: ['var(--font-roboto)', 'sans-serif'],
+      josefin: ['var(--font-josefin)', 'sans-serif'],
     },
-    colors:{
+    colors: {
       white: '#FFFFFF',
       dark_blue: '#1A1B21',
       blue: '#004DA7',
       dark_gray: '#202123',
-      gray: "#292D31",
-      light_gray: "#D9D9D9"
-    }
+      gray: '#292D31',
+      light_gray: '#D9D9D9',
+    },
   },
   plugins: [],
-}
+};
