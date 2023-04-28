@@ -1,3 +1,5 @@
+/* eslint camelcase: ["error", {ignoreImports: true}] */
+
 import React from 'react';
 import '@/styles/globals.css';
 import Head from 'next/head';
