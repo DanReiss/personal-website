@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import Navbar from '@/components/Navbar';
+import ItemSkill from '@/components/ItemSkill';
 
 function Home() {
   return (
@@ -121,7 +122,9 @@ function Home() {
             <h3 className="font-josefin text-3xl">Competências</h3>
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>
-          <div className="grid" />
+          <div className="grid">
+            <ItemSkill />
+          </div>
         </section>
       </main>
     </>
