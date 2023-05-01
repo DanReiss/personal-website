@@ -20,7 +20,7 @@ const josefin = Josefin_Sans({
 
 function App({ Component, pageProps }) {
   return (
-    <div className={`${josefin.variable} ${roboto.variable} font-roboto w-screen`}>
+    <div className={`${josefin.variable} ${roboto.variable} font-roboto max-w[100vw]`}>
       <Head>
         <title>Danilo dos Reis Amaral</title>
       </Head>

@@ -55,10 +55,67 @@ function Home() {
       <div className="h-[85vh] w-full" />
       <main className="relative bg-gray pt-2">
         <span className="bg-dark_blue w-full h-1 inline-block" />
-        {/* <section className="w-full text-white p-4">
-          <h2 className="font-josefin text-3xl w-full">Sobre Mim</h2>
-          <span className="bg-blue w-full h-3 inline-block" />
-        </section> */}
+        <section className="text-white px-4">
+          <div className="py-4">
+            <div className="flex mb-3">
+              <h3 className="font-josefin text-3xl">Sobre Mim</h3>
+              <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
+            </div>
+            <h6 className="mb-3">Desenvolvedor Web Front-End</h6>
+            <div className="flex mb-3">
+              <Image
+                src="/icons/location.svg"
+                height={16.4}
+                width={13}
+                alt="location icon"
+                className="w-fit"
+              />
+              <h6 className="ml-2">Brasília-DF</h6>
+            </div>
+            <p className="font-light">
+              Estou estudando e buscando minha primeira oportunidade na área.
+              Tenho buscado aprimorar meus conhecimentos e desenvolver-me com eficiência.
+              Estou focado em me  aprofundar no JavaScript e ReactJS na área do Front-End.
+            </p>
+          </div>
+          <div className="py-4">
+            <h3 className="font-josefin text-3xl mb-3">Acadêmico</h3>
+            <div className="font-light">
+              <div className="grid grid-flow-col auto-cols-auto gap-2 items-center pb-4">
+                <div className="flex flex-col">
+                  <span>06/25</span>
+                  <span>01/23</span>
+                </div>
+                <span className="w-2 h-2 bg-white rounded-full" />
+                <span>Análise e Desenvolvimento de Sistemas</span>
+              </div>
+              <div className="grid grid-flow-col auto-cols-auto gap-2 items-center pb-4">
+                <div className="flex flex-col">
+                  <span>10/22</span>
+                  <span>05/22</span>
+                </div>
+                <span className="w-2 h-2 bg-white rounded-full" />
+                <span>
+                  Desenvolvimento Web - Programador BR
+                  <br />
+                  JavaScript, CSS, HTML, ReactJS
+                </span>
+              </div>
+              <div className="grid grid-flow-col auto-cols-auto gap-2 items-center pb-4">
+                <div className="flex flex-col">
+                  <span>10/22</span>
+                  <span>05/22</span>
+                </div>
+                <span className="w-2 h-2 bg-white rounded-full" />
+                <span>
+                  RocketSeat Discover - Trilha Fundamentar
+                  <br />
+                  SEO, Git/Github, SQL, NodeJS
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
