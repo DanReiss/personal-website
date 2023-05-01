@@ -1,8 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 
-function ItemSkill() {
+function ItemSkill({ imagePath, name }) {
   return (
-    <h1>Item Skill</h1>
+    <div>
+      <Image
+        src={imagePath}
+        alt={`${name} icon`}
+        width={30}
+        height={30}
+      />
+    </div>
   );
 }
 
