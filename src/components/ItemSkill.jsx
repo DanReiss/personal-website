@@ -11,7 +11,7 @@ function ItemSkill({ imagePath, name }) {
             alt={`${name} icon`}
             width={36}
             height={36}
-            className="absolute top-[-50%] drop-shadow-lg shadow-black"
+            className="absolute top-[-50%] left-[7.5px] drop-shadow-lg shadow-black"
           />
         )
         : ''}
