@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function ItemSkill({ imagePath, name }) {
   return (
-    <div className="relative bg-gray px-3.5 py-2.5 mb-12">
+    <div className="bg-gradient-to-r from-blue from-[15px] to-gray to-[15px] bg-gray relative px-3.5 py-2.5 mb-12">
       {imagePath
         ? (
           <Image
