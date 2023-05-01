@@ -122,12 +122,17 @@ function Home() {
             <h3 className="font-josefin text-3xl">Competências</h3>
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>
-          <div className="grid">
-            <ItemSkill imagePath="/icons/js.svg" />
-            <ItemSkill imagePath="/icons/react.svg" />
-            <ItemSkill imagePath="/icons/js.svg" />
-            <ItemSkill imagePath="/icons/js.svg" />
-            <ItemSkill imagePath="/icons/js.svg" />
+          <div className="font-josefin grid grid-cols-2 gap-x-5 py-4">
+            <ItemSkill imagePath="/icons/js.svg" name="JavaScript" />
+            <ItemSkill imagePath="/icons/react.svg" name="React" />
+            <ItemSkill imagePath="/icons/html.svg" name="HTML" />
+            <ItemSkill imagePath="/icons/css.svg" name="CSS" />
+            <ItemSkill imagePath="/icons/tailwind.svg" name="Tailwind" />
+            <ItemSkill imagePath="/icons/sass.svg" name="SASS" />
+            <ItemSkill imagePath="/icons/git.svg" name="Git/Github" />
+            <ItemSkill name="SEO" />
+            <ItemSkill imagePath="/icons/database.svg" name="SQL" />
+            <ItemSkill name="API REST" />
           </div>
         </section>
       </main>
