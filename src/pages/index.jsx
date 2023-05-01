@@ -116,6 +116,13 @@ function Home() {
             </div>
           </div>
         </section>
+        <section className="bg-dark_blue text-white px-4">
+          <div className="flex mb-3 pt-6 pb-4">
+            <h3 className="font-josefin text-3xl">Competências</h3>
+            <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
+          </div>
+          <div className="grid" />
+        </section>
       </main>
     </>
   );
