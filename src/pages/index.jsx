@@ -123,7 +123,11 @@ function Home() {
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>
           <div className="grid">
-            <ItemSkill />
+            <ItemSkill imagePath="/icons/js.svg" />
+            <ItemSkill imagePath="/icons/react.svg" />
+            <ItemSkill imagePath="/icons/js.svg" />
+            <ItemSkill imagePath="/icons/js.svg" />
+            <ItemSkill imagePath="/icons/js.svg" />
           </div>
         </section>
       </main>
