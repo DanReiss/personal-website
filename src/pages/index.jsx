@@ -122,7 +122,7 @@ function Home() {
             <h3 className="font-josefin text-3xl">Competências</h3>
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>
-          <div className="font-josefin grid grid-cols-2 gap-x-5 py-4">
+          <div className="font-josefin grid grid-cols-2 gap-x-5 gap-y-10 py-4">
             <ItemSkill imagePath="/icons/js.svg" name="JavaScript" />
             <ItemSkill imagePath="/icons/react.svg" name="React" />
             <ItemSkill imagePath="/icons/html.svg" name="HTML" />
