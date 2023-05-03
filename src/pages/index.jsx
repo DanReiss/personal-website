@@ -35,7 +35,6 @@ function Home() {
           <a
             href="mailto:danreis.ctt@gmail.com"
             target="_blank"
-            className="h-fit"
             rel="noreferrer"
           >
             <Image
@@ -43,6 +42,7 @@ function Home() {
               width={45}
               height={34}
               alt="meu email"
+              className="h-auto w-auto"
             />
           </a>
           <a
@@ -52,7 +52,7 @@ function Home() {
             <Image
               src="/icons/linkedin.svg"
               width={39}
-              height={39}
+              height={40}
               alt="meu linkedin"
             />
           </a>
@@ -141,9 +141,11 @@ function Home() {
             <ItemSkill name="API REST" />
           </div>
         </section>
-        <section className="text-white px-4">
-          <h3 className="font-josefin text-3xl mb-3 pt-6 pb-4">Projetos Recentes</h3>
-          <ProjectsCarousel projects={data} />
+        <section className="text-white font-josefin px-4 pb-8">
+          <h3 className="text-3xl mb-3 pt-6 pb-4">Projetos Recentes</h3>
+          { data
+            ? <ProjectsCarousel jsondata={data} />
+            : ''}
         </section>
       </main>
     </>
