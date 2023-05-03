@@ -4,6 +4,7 @@ import useSWR from 'swr';
 
 import Navbar from '@/components/Navbar';
 import ItemSkill from '@/components/ItemSkill';
+import ProjectsCarousel from '@/components/ProjectsCarousel';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -139,6 +140,10 @@ function Home() {
             <ItemSkill imagePath="/icons/database.svg" name="SQL" />
             <ItemSkill name="API REST" />
           </div>
+        </section>
+        <section className="text-white px-4">
+          <h3 className="font-josefin text-3xl mb-3 pt-6 pb-4">Projetos Recentes</h3>
+          <ProjectsCarousel projects={data} />
         </section>
       </main>
     </>
