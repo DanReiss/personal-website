@@ -8,6 +8,15 @@
       "image": "/images/form.png",
       "githuburl": "https://github.com/DanReiss/multistep-form-react",
       "vercelurl": "https://formultistep-danreiss.vercel.app/"
+    },
+    {
+      "name": "KanbanBoard",
+      "year": 2022,
+      "description": "Projeto de um 'Kanban', método de controle de fluxo de trabalho, muito usado por empresas.O projeto usa o sistema 'Drag and Drop' do JavaScript para que o usuário possa interagir com as tarefas ",
+      "tags": ["javascript", "bootstrap", "css"],
+      "image": "/images/kanban.png",
+      "githuburl": "https://github.com/DanReiss/KanbanBoard/",
+      "vercelurl": "https://kanbanboard-danreiss.vercel.app"
     }
   ]
 }
