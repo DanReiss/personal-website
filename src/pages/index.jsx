@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
+import useSWR from 'swr';
 
 import Navbar from '@/components/Navbar';
 import ItemSkill from '@/components/ItemSkill';
 
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
 function Home() {
+  const { data, error } = useSWR('/api/static', fetcher);
+
   return (
     <>
       <Navbar active="home" />
