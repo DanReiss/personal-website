@@ -5,6 +5,7 @@ import useSWR from 'swr';
 import Navbar from '@/components/Navbar';
 import ItemSkill from '@/components/ItemSkill';
 import ProjectsCarousel from '@/components/ProjectsCarousel';
+import Footer from '@/components/Footer';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -148,6 +149,7 @@ function Home() {
             : ''}
         </section>
       </main>
+      <Footer />
     </>
   );
 }
