@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <footer className="relative grid grid-cols-2 w-full bg-dark_gray text-white font-light px-4">
-      <div className="py-8 col-span-2">
+    <footer className="relative grid grid-cols-12 w-full bg-dark_gray text-white font-light px-4">
+      <div className="py-8 col-span-12">
         <h3 className="text-xl font-bold">Danilo dos Reis Amaral</h3>
         <h4>Desenvolvedor Web</h4>
       </div>
-      <div>
+      <div className="col-span-7">
         <h3 className="text-xl font-bold">Contato</h3>
         <ul>
           <li>
@@ -30,7 +30,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="col-span-5">
         <h3 className="text-xl font-bold">Navegação</h3>
         <ul>
           <li>
@@ -56,7 +56,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className="col-span-2 w-full py-8 mt-8 border-t-2 border-blue">
+      <div className="col-span-12 w-full py-8 mt-8 border-t-2 border-blue">
         <Image
           src="/icons/logo.svg"
           width={35}

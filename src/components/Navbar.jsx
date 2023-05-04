@@ -25,7 +25,7 @@ function Navbar({ active }) {
       <Link href="/">
         <Image
           src="/icons/logo.svg"
-          alt="logo D."
+          alt="logo do site: 'D.'"
           width={35}
           height={27}
         />

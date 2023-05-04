@@ -17,7 +17,7 @@ function ProjectsCarousel({ jsondata }) {
             </div>
           ))
          }
-        <div className="grid place-items-center shrink-0 w-[140px] h-[210px] bg-dark_gray">
+        <div className="grid place-items-center shrink-0 w-[145px] h-[215px] bg-dark_gray">
           <span>Ver mais</span>
         </div>
       </div>
