@@ -1,17 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
-import useSWR from 'swr';
 
+import getStaticData from 'lib/getStaticData';
 import Navbar from '@/components/Navbar';
 import ItemSkill from '@/components/ItemSkill';
 import ProjectsCarousel from '@/components/ProjectsCarousel';
 import Footer from '@/components/Footer';
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+export async function getStaticProps() {
+  const data = await getStaticData();
 
-function Home() {
-  const { data, error } = useSWR('/api/static', fetcher);
+  return {
+    props: { data },
+  };
+}
 
+function Home({ data }) {
   return (
     <>
       <Navbar active="home" />
@@ -145,7 +149,7 @@ function Home() {
         <section className="text-white font-josefin px-4 pb-8">
           <h3 className="text-3xl mb-3 pt-6 pb-4">Projetos Recentes</h3>
           { data
-            ? <ProjectsCarousel jsondata={data} />
+            ? <ProjectsCarousel projects={data} />
             : ''}
         </section>
       </main>
