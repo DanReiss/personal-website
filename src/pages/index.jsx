@@ -8,14 +8,16 @@ import ProjectsCarousel from '@/components/ProjectsCarousel';
 import Footer from '@/components/Footer';
 
 export async function getStaticProps() {
-  const data = await getStaticData();
+  const projects = await getStaticData();
 
   return {
-    props: { data },
+    props: { projects },
   };
 }
 
-function Home({ data }) {
+function Home({ projects }) {
+  const projectsData = projects.data.slice(0, 5);
+
   return (
     <>
       <Navbar active="home" />
@@ -148,8 +150,8 @@ function Home({ data }) {
         </section>
         <section className="text-white font-josefin px-4 pb-8">
           <h3 className="text-3xl mb-3 pt-6 pb-4">Projetos Recentes</h3>
-          { data
-            ? <ProjectsCarousel projects={data} />
+          { projectsData
+            ? <ProjectsCarousel projects={projectsData} />
             : ''}
         </section>
       </main>
