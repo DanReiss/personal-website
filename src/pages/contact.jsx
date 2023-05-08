@@ -8,7 +8,7 @@ function Contact() {
       <Navbar active="contato" />
       <div className="w-full min-h-screen text-white bg-dark_blue pt-[66px] px-6 pb-4">
         <div className="flex mb-2 mt-8">
-          <h3 className="font-josefin text-3xl">Contato</h3>
+          <h3 className="font-josefin text-3xl tracking-wide">Contato</h3>
           <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
         </div>
         <p className="font-light">

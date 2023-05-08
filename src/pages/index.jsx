@@ -19,7 +19,7 @@ function Home() {
         <div className="text-white text-center">
           <h1 className="text-3xl font-josefin font-bold">DANILO DOS REIS</h1>
           <hr className="my-1" />
-          <h4 className="text-xl">Desenvolvedor Web</h4>
+          <h4 className="text-xl tracking-[0.2em]">Desenvolvedor Web</h4>
         </div>
         <div className="flex flex-row justify-center gap-9">
           <a
@@ -66,7 +66,7 @@ function Home() {
         <section className="text-white px-4">
           <div className="py-4">
             <div className="flex mb-3">
-              <h3 className="font-josefin text-3xl">Sobre Mim</h3>
+              <h3 className="font-josefin text-3xl tracking-wide">Sobre Mim</h3>
               <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
             </div>
             <h6 className="mb-3">Desenvolvedor Web Front-End</h6>
@@ -126,7 +126,7 @@ function Home() {
         </section>
         <section className="bg-dark_blue text-white px-4">
           <div className="flex mb-3 pt-6 pb-4">
-            <h3 className="font-josefin text-3xl">Competências</h3>
+            <h3 className="font-josefin text-3xl tracking-wide">Competências</h3>
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>
           <div className="font-josefin grid grid-cols-2 gap-x-5 gap-y-10 py-4">
