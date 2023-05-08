@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-function ProjectItem({ data }) {
+function ProjectItem({ itemdata }) {
   return (
-    <div className="m-auto w-full">
+    <div className="m-auto w-full my-6">
       <div className="relative w-full h-[325px] bg-white rounded-3xl">
 
         <a
-          href="https://github.com/DanReiss"
+          href={itemdata.vercelurl}
           target="_blank"
           rel="noreferrer"
           aria-label="Visite o projeto em funcionamento"
@@ -16,7 +16,7 @@ function ProjectItem({ data }) {
           Link do Projeto em Produção
         </a>
         <a
-          href="https://github.com/DanReiss"
+          href={itemdata.githuburl}
           target="_blank"
           rel="noreferrer"
           aria-label="Visite o repositório do projeto [nome-do-projeto]"
@@ -30,8 +30,14 @@ function ProjectItem({ data }) {
           />
         </a>
       </div>
-      <h4 className="font-josefin text-xl mt-1">Título do Projeto</h4>
-      <p className="font-light">Descrição pouco detalhada do projeto</p>
+      <a
+        href={itemdata.vercelurl}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h4 className="font-josefin text-xl mt-1">{itemdata.name}</h4>
+      </a>
+      <p className="font-light">{itemdata.description}</p>
     </div>
   );
 }
