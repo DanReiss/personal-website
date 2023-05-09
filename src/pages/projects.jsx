@@ -18,7 +18,7 @@ function Projects({ projects }) {
   return (
     <>
       <Navbar active="projetos" />
-      <div className="w-full min-h-screen text-white bg-dark_blue pt-[66px] px-6 pb-4">
+      <div className="w-full text-white bg-dark_blue pt-[66px] px-6 pb-4">
         <div className="flex mb-2 mt-8">
           <h3 className="font-josefin text-3xl tracking-wide">Projetos</h3>
           <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
@@ -35,9 +35,6 @@ function Projects({ projects }) {
               <ProjectItem key={i} itemdata={itemdata} />
             ))
           }
-
-          <ProjectItem itemdata="-" />
-
         </div>
       </div>
       <Footer />

@@ -16,7 +16,7 @@
       "description": "Projeto de um 'Kanban', método de controle de fluxo de trabalho, muito usado por empresas.O projeto usa o sistema 'Drag and Drop' do JavaScript para que o usuário possa interagir com as tarefas.",
       "tags": ["javascript", "bootstrap", "css"],
       "image": "/images/kanban.png",
-      "gif": "/gifs/kanban.gif",
+      "gif": "/gifs/kanbandesktop.gif",
       "githuburl": "https://github.com/DanReiss/KanbanBoard/",
       "vercelurl": "https://kanbanboard-danreiss.vercel.app"
     },
