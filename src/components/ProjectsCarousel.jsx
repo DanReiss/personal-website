@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function ProjectsCarousel({ projects }) {
   return (
@@ -15,8 +16,13 @@ function ProjectsCarousel({ projects }) {
             </div>
           ))
          }
-        <div className="grid place-items-center shrink-0 w-[145px] h-[215px] bg-dark_gray">
-          <span>Ver mais</span>
+        <div className="shrink-0 w-[145px] h-[215px] bg-dark_gray">
+          <Link
+            href="/projects"
+            className="grid place-items-center shrink-0 w-full h-full"
+          >
+            <span>Ver mais</span>
+          </Link>
         </div>
       </div>
     </div>
