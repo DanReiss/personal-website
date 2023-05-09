@@ -3,7 +3,7 @@ import React from 'react';
 function ProjectsCarousel({ projects }) {
   return (
   /* Wrapper */
-    <div className="relative overflow-hidden m-auto">
+    <div className="relative overflow-hidden m-auto my-8">
       {/* Container */}
       <div className="width-full flex flex-row align-center overflow-auto gap-3">
         {

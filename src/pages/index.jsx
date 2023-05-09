@@ -67,10 +67,10 @@ function Home({ projects }) {
       </div>
       {/* mostrar o background e espaçar a segunda seção -> */}
       <div className="h-[85vh] w-full" />
-      <main className="relative bg-gray pt-2">
+      <main className="relative bg-gray">
         <span className="bg-dark_blue w-full h-1 inline-block" />
-        <section className="text-white px-4">
-          <div className="py-4">
+        <section className="text-white px-4 py-8">
+          <div className='mb-8'>
             <div className="flex mb-3">
               <h3 className="font-josefin text-3xl tracking-wide">Sobre Mim</h3>
               <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
@@ -92,7 +92,7 @@ function Home({ projects }) {
               Estou focado em me  aprofundar no JavaScript e ReactJS na área do Front-End.
             </p>
           </div>
-          <div className="py-4">
+          <div>
             <h3 className="font-josefin text-3xl mb-3">Acadêmico</h3>
             <div className="font-light">
               <div className="grid grid-flow-col auto-cols-auto gap-2 items-center pb-4">
@@ -130,8 +130,8 @@ function Home({ projects }) {
             </div>
           </div>
         </section>
-        <section className="bg-dark_blue text-white px-4">
-          <div className="flex mb-3 pt-6 pb-4">
+        <section className="bg-dark_blue text-white px-4 py-8">
+          <div className="flex mb-6">
             <h3 className="font-josefin text-3xl tracking-wide">Competências</h3>
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>
@@ -148,8 +148,8 @@ function Home({ projects }) {
             <ItemSkill name="API REST" />
           </div>
         </section>
-        <section className="text-white font-josefin px-4 pb-8">
-          <h3 className="text-3xl mb-3 pt-6 pb-4">Projetos Recentes</h3>
+        <section className="text-white font-josefin px-4 py-8">
+          <h3 className="text-3xl mb-6">Projetos Recentes</h3>
           { projectsData
             ? <ProjectsCarousel projects={projectsData} />
             : ''}
