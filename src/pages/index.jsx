@@ -94,39 +94,33 @@ function Home({ projects }) {
           </div>
           <div>
             <h3 className="font-josefin text-3xl mb-3">Acadêmico</h3>
-            <div className="font-light">
-              <div className="grid grid-flow-col auto-cols-auto gap-2 items-center pb-4">
-                <div className="flex flex-col">
-                  <span>06/25</span>
-                  <span>01/23</span>
-                </div>
-                <span className="w-2 h-2 bg-white rounded-full" />
-                <span>Análise e Desenvolvimento de Sistemas</span>
+            <div className="font-light grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5">
+              <div className="flex flex-col">
+                <span>06/25</span>
+                <span>01/23</span>
               </div>
-              <div className="grid grid-flow-col auto-cols-auto gap-2 items-center pb-4">
-                <div className="flex flex-col">
-                  <span>10/22</span>
-                  <span>05/22</span>
-                </div>
-                <span className="w-2 h-2 bg-white rounded-full" />
-                <span>
-                  Desenvolvimento Web - Programador BR
-                  <br />
-                  JavaScript, CSS, HTML, ReactJS
-                </span>
+              <span className="w-2 h-2 bg-white rounded-full" />
+              <span>Análise e Desenvolvimento de Sistemas</span>
+              <div className="flex flex-col">
+                <span>10/22</span>
+                <span>05/22</span>
+              </div>  
+              <span className="w-2 h-2 bg-white rounded-full" />
+              <span>
+                Desenvolvimento Web - Programador BR 
+                <br/>
+                JavaScript, CSS, HTML, ReactJS
+              </span>
+              <div className="flex flex-col">
+                <span>10/22</span>
+                <span>05/22</span>
               </div>
-              <div className="grid grid-flow-col auto-cols-auto gap-2 items-center pb-4">
-                <div className="flex flex-col">
-                  <span>10/22</span>
-                  <span>05/22</span>
-                </div>
-                <span className="w-2 h-2 bg-white rounded-full" />
-                <span>
-                  RocketSeat Discover - Trilha Fundamentar
-                  <br />
-                  SEO, Git/Github, SQL, NodeJS
-                </span>
-              </div>
+              <span className="w-2 h-2 bg-white rounded-full" />
+              <span>
+                RocketSeat Discover - Trilha Fundamentar 
+                <br/>
+                SEO, Git/Github, SQL, NodeJS
+              </span>
             </div>
           </div>
         </section>
