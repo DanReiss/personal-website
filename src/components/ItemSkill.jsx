@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function ItemSkill({ imagePath, name }) {
   return (
-    <div className="bg-gradient-to-r from-blue from-[15px] to-gray to-[15px] bg-gray relative px-3.5 py-2.5">
+    <div className="w-full max-w-[165px] min-h-[40px] bg-gradient-to-r from-blue from-[15px] to-gray to-[15px] bg-gray relative px-3.5 py-2.5">
       {imagePath
         ? (
           <Image
@@ -11,11 +11,11 @@ function ItemSkill({ imagePath, name }) {
             alt={`${name} icon`}
             width={36}
             height={36}
-            className="absolute top-[-50%] left-[7.5px] drop-shadow-lg shadow-black"
+            className="absolute top-[-50%] left-[7.5px] drop-shadow-lg shadow-black md:scale-125"
           />
         )
         : ''}
-      <span className="inline-block w-full text-right">{name}</span>
+      <span className="inline-block w-full text-right font-bold md:text-xl">{name}</span>
     </div>
   );
 }

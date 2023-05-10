@@ -22,12 +22,12 @@ function Home({ projects }) {
     <>
       <Navbar active="home" />
       <div className="fixed h-screen w-full flex flex-col justify-evenly p-4 bg-dark_blue">
-        <div className="text-white text-center">
-          <h1 className="text-3xl font-josefin font-bold">DANILO DOS REIS</h1>
-          <hr className="my-1" />
-          <h4 className="text-xl tracking-[0.2em]">Desenvolvedor Web</h4>
+        <div className="text-white text-center mx-auto max-w-screen-xl w-full">
+          <h1 className="text-3xl md:text-4xl font-josefin font-bold">DANILO DOS REIS</h1>
+          <hr className="my-1 md:my-2" />
+          <h2 className="text-xl md:text-2xl tracking-[0.2em]">Desenvolvedor Web</h2>
         </div>
-        <div className="flex flex-row justify-center gap-9">
+        <div className="flex flex-row justify-center gap-9 md:gap-20">
           <a
             href="https://github.com/DanReiss"
             target="__blank"
@@ -37,6 +37,7 @@ function Home({ projects }) {
               width={39}
               height={39}
               alt="meu github"
+              className="md:scale-125"
             />
           </a>
           <a
@@ -49,7 +50,7 @@ function Home({ projects }) {
               width={45}
               height={34}
               alt="meu email"
-              className="h-auto w-auto"
+              className="h-auto w-auto md:scale-125"
             />
           </a>
           <a
@@ -59,8 +60,9 @@ function Home({ projects }) {
             <Image
               src="/icons/linkedin.svg"
               width={39}
-              height={40}
+              height={39}
               alt="meu linkedin"
+              className="md:scale-125"
             />
           </a>
         </div>
@@ -69,11 +71,11 @@ function Home({ projects }) {
       <div className="h-[85vh] w-full" />
       <main className="relative bg-gray">
         <span className="bg-dark_blue w-full h-1 inline-block" />
-        <section className="text-white px-4 py-8">
-          <div className='mb-8'>
-            <div className="flex mb-3">
-              <h3 className="font-josefin text-3xl tracking-wide">Sobre Mim</h3>
-              <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
+        <section className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
+          <div className="mb-8 mx-auto max-w-screen-xl">
+            <div className="flex mb-3 md:mb-6">
+              <h3 className="font-josefin text-3xl md:text-4xl tracking-wide">Sobre Mim</h3>
+              <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2 md:ml-4" />
             </div>
             <h6 className="mb-3">Desenvolvedor Web Front-End</h6>
             <div className="flex mb-3">
@@ -92,8 +94,8 @@ function Home({ projects }) {
               Estou focado em me  aprofundar no JavaScript e ReactJS na área do Front-End.
             </p>
           </div>
-          <div>
-            <h3 className="font-josefin text-3xl mb-3">Acadêmico</h3>
+          <div className="mx-auto max-w-screen-xl">
+            <h3 className="font-josefin text-3xl mb-3 md:mb-6">Acadêmico</h3>
             <div className="font-light grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5">
               <div className="flex flex-col">
                 <span>06/25</span>
@@ -104,32 +106,41 @@ function Home({ projects }) {
               <div className="flex flex-col">
                 <span>10/22</span>
                 <span>05/22</span>
-              </div>  
+              </div>
               <span className="w-2 h-2 bg-white rounded-full" />
-              <span>
-                Desenvolvimento Web - Programador BR 
-                <br/>
-                JavaScript, CSS, HTML, ReactJS
-              </span>
+              <div>
+                <span className="sm:after:content-['-']">
+                  Desenvolvimento Web - Programador BR
+                </span>
+                <br className="sm:hidden" />
+                <span>
+                  JavaScript, CSS, HTML, ReactJS
+                </span>
+              </div>
               <div className="flex flex-col">
                 <span>10/22</span>
                 <span>05/22</span>
               </div>
               <span className="w-2 h-2 bg-white rounded-full" />
-              <span>
-                RocketSeat Discover - Trilha Fundamentar 
-                <br/>
-                SEO, Git/Github, SQL, NodeJS
-              </span>
+              <div>
+                <span className="sm:after:content-['-']">
+                  RocketSeat Discover - Trilha Fundamentar
+                </span>
+                <br className="sm:hidden" />
+                <span>
+                  SEO, Git/Github, SQL, NodeJS
+                </span>
+                <br />
+              </div>
             </div>
           </div>
         </section>
-        <section className="bg-dark_blue text-white px-4 py-8">
-          <div className="flex mb-6">
+        <section className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
+          <div className="flex mb-6 md:mb-9 mx-auto max-w-screen-xl">
             <h3 className="font-josefin text-3xl tracking-wide">Competências</h3>
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>
-          <div className="font-josefin grid grid-cols-2 gap-x-5 gap-y-10 py-4">
+          <div className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center mx-auto max-w-screen-lg py-4">
             <ItemSkill imagePath="/icons/js.svg" name="JavaScript" />
             <ItemSkill imagePath="/icons/react.svg" name="React" />
             <ItemSkill imagePath="/icons/html.svg" name="HTML" />
@@ -142,8 +153,8 @@ function Home({ projects }) {
             <ItemSkill name="API REST" />
           </div>
         </section>
-        <section className="text-white font-josefin px-4 py-8">
-          <h3 className="text-3xl mb-6">Projetos Recentes</h3>
+        <section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
+          <h3 className="m-auto max-w-screen-xl text-3xl mb-6">Projetos Recentes</h3>
           { projectsData
             ? <ProjectsCarousel projects={projectsData} />
             : ''}
