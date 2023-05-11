@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+p{
+  font-size: 1rem;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+@media (min-width: 768px) {
+  span, p{
+    font-size: large;
+  }
+}
+
