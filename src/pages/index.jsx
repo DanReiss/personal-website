@@ -22,7 +22,7 @@ function Home({ projects }) {
     <>
       <Navbar active="home" />
       <div className="fixed h-screen w-full flex flex-col justify-evenly p-4 bg-dark_blue">
-        <div className="text-white text-center mx-auto max-w-screen-xl w-full">
+        <div className="text-white text-center container w-full">
           <h1 className="text-3xl md:text-4xl font-josefin font-bold">DANILO DOS REIS</h1>
           <hr className="my-1 md:my-2" />
           <h2 className="text-xl md:text-2xl tracking-[0.2em]">Desenvolvedor Web</h2>
@@ -72,7 +72,7 @@ function Home({ projects }) {
       <main className="relative bg-gray">
         <span className="bg-dark_blue w-full h-1 inline-block" />
         <section className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <div className="mb-8 mx-auto max-w-screen-xl">
+          <div className="mb-8 container">
             <div className="flex mb-3 md:mb-6">
               <h3 className="font-josefin text-3xl md:text-4xl tracking-wide">Sobre Mim</h3>
               <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2 md:ml-4" />
@@ -94,7 +94,7 @@ function Home({ projects }) {
               Estou focado em me  aprofundar no JavaScript e ReactJS na área do Front-End.
             </p>
           </div>
-          <div className="mx-auto max-w-screen-xl">
+          <div className="container">
             <h3 className="font-josefin text-3xl mb-3 md:mb-6">Acadêmico</h3>
             <div className="font-light grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5">
               <div className="flex flex-col">
@@ -136,11 +136,11 @@ function Home({ projects }) {
           </div>
         </section>
         <section className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <div className="flex mb-6 md:mb-9 mx-auto max-w-screen-xl">
+          <div className="flex mb-6 md:mb-9 container">
             <h3 className="font-josefin text-3xl tracking-wide">Competências</h3>
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>
-          <div className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center mx-auto max-w-screen-lg py-4">
+          <div className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center container py-4">
             <ItemSkill imagePath="/icons/js.svg" name="JavaScript" />
             <ItemSkill imagePath="/icons/react.svg" name="React" />
             <ItemSkill imagePath="/icons/html.svg" name="HTML" />
@@ -154,7 +154,7 @@ function Home({ projects }) {
           </div>
         </section>
         <section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <h3 className="m-auto max-w-screen-xl text-3xl mb-6">Projetos Recentes</h3>
+          <h3 className="container text-3xl mb-6">Projetos Recentes</h3>
           { projectsData
             ? <ProjectsCarousel projects={projectsData} />
             : ''}
