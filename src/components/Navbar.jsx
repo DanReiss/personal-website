@@ -21,8 +21,8 @@ function Navbar({ active }) {
   ];
 
   return (
-    <div className="fixed w-full z-10 text-white font-light tracking-widest">
-      <div className="relative z-20 w-full flex flex-row justify-between align-center bg-dark_gray p-4 px-5">
+    <div className="fixed w-full z-10 text-white font-light tracking-widest lg:bg-dark_gray lg:flex lg:flex-row lg:px-16">
+      <div className="relative z-20 w-full lg:w-1/2 flex flex-row justify-between items-center bg-dark_gray p-4 px-5 lg:p-0">
         <Link href="/">
           <Image
             src="/icons/logo.svg"
@@ -42,11 +42,12 @@ function Navbar({ active }) {
             alt="navbar"
             width={38}
             height={27}
+            className="lg:hidden"
           />
         </button>
       </div>
-      <div className={`${navOpen ? '' : 'w-full translate-y-[-300px] opacity-0'} transition-all z-0 duration-300 bg-gray p-4 px-5`}>
-        <ul className="flex flex-col text-center uppercase">
+      <div className={`${navOpen ? '' : 'w-full translate-y-[-300px] opacity-0'} lg:translate-y-0 lg:opacity-100 transition-all lg:w-1/2 lg:bg-dark_gray z-0 duration-300 bg-gray p-4 px-5`}>
+        <ul className="flex flex-col lg:flex-row lg:justify-end text-center uppercase">
           {routesOptions.map((route, i) => (
             <li
               key={i}
@@ -56,9 +57,15 @@ function Navbar({ active }) {
                   ? 'bg-blue mb-2 text-lg'
                   : 'hover:bg-dark_gray'
               } 
-              mb-2 text-lg transition-all`}
+              mb-2 lg:mb-0 lg:ml-4 lg:px-4 text-lg transition-all`}
             >
-              <Link href={route.route} className="block">{route.name}</Link>
+              <Link
+                href={route.route}
+                className="block"
+              >
+                {route.name}
+
+              </Link>
             </li>
           ))}
         </ul>
