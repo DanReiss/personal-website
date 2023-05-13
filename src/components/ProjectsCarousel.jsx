@@ -4,9 +4,9 @@ import Link from 'next/link';
 function ProjectsCarousel({ projects }) {
   return (
   /* Wrapper */
-    <div className="relative m-auto max-w-screen-xl overflow-hidden m-auto my-8">
+    <div className="relative container overflow-hidden m-auto py-12">
       {/* Container */}
-      <div className="max-w-screen-xl flex flex-row md:justify-between align-center overflow-auto gap-3 lg:gap-0">
+      <div className="container flex flex-row md:justify-between align-center overflow-auto gap-3 lg:gap-0">
         {
           projects.map((project, i) => (
             <div key={i} className="shrink-0 w-[145px] lg:w-[18%] md:h-full aspect-[3/4] bg-blue">
