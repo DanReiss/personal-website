@@ -11,6 +11,10 @@ p{
   margin: 0 auto;
   max-width: 1200px;
 }
+ 
+a{
+  height: min-content;
+}
 
 
 @media (min-width: 768px) {
