@@ -17,6 +17,16 @@ a{
   height: min-content;
 }
 
+.vertical-line::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  transform: translate(4px, -15%);
+  width: 1px;
+  height: 90%;
+  background-color: white;
+}
+
 
 @media (min-width: 768px) {
   span, p{

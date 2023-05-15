@@ -16,7 +16,7 @@ export async function getStaticProps() {
 }
 
 function Home({ projects }) {
-  const projectsData = projects.data.slice(0, 5);
+  const projectsData = projects.data.slice(0, 4);
 
   return (
     <>
@@ -96,7 +96,7 @@ function Home({ projects }) {
           </div>
           <div className="container">
             <h3 className="font-josefin text-3xl mb-3 md:mb-6">Acadêmico</h3>
-            <div className="font-light grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5">
+            <div className="relative grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5 md:gap-6 font-light">
               <div className="flex flex-col">
                 <span>06/25</span>
                 <span>01/23</span>
@@ -121,7 +121,7 @@ function Home({ projects }) {
                 <span>10/22</span>
                 <span>05/22</span>
               </div>
-              <span className="w-2 h-2 bg-white rounded-full" />
+              <span className="w-2 h-2 bg-white rounded-full vertical-line" />
               <div>
                 <span className="sm:after:content-['-']">
                   RocketSeat Discover - Trilha Fundamentar
