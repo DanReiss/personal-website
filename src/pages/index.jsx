@@ -72,7 +72,7 @@ function Home({ projects }) {
       <main className="relative bg-gray">
         <span className="bg-dark_blue w-full h-1 inline-block" />
         <section className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <div className="mb-8 container">
+          <div className="mb-8 md:mb-12 container">
             <div className="flex mb-3 md:mb-6">
               <h3 className="font-josefin text-3xl md:text-4xl tracking-wide">Sobre Mim</h3>
               <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2 md:ml-4" />
