@@ -1,5 +1,6 @@
+/* eslint-disable import/extensions */
 import React from 'react';
-import Navbar from '@/components/Navbar.jsx';
+import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 function Contact() {
