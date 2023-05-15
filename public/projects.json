@@ -34,11 +34,41 @@
       "name": "Weather Search",
       "year": 2022,
       "description": "Aplicação para consultar o clima de acordo com o nome da cidade. O usuário pode visualizar informações como a temperatura, velocidade do vento, etc.",
-      "tags": ["javascript", "css", "html"],
+      "tags": ["javascript", "css", "html", "external api"],
       "image": "/images/weathersearch.png",
       "gif": "/gifs/weathersearch.gif",
       "githuburl": "https://github.com/DanReiss/Previsao-do-Tempo",
       "vercelurl": "https://weathersearch-danreiss.vercel.app"
+    },
+    {
+      "name": "Bootstrap Page",
+      "year": 2022,
+      "description": "Website falso de uma empresa de cursos e aulas online. Foi desenvolvido usando classes do framework Bootstrap, dessa forma pude me introduzir no framework na prática.",
+      "tags": ["bootstrap", "css", "html"],
+      "image": "/images/bootstrappage.png",
+      "gif": "/gifs/bootstrappage.gif",
+      "githuburl": "https://github.com/DanReiss/LandingPageBootstrap",
+      "vercelurl": "https://bootstrap-page-danreiss.vercel.app"
+    },
+    {
+      "name": "PokeSearch",
+      "year": 2022,
+      "description": "Projeto para visualizar e pesquisar por pokemons. O usuário pode visualizar os pokemons em ordem crescente do número de identidade ou pode pesquisar pelo nome ou número de identidade.",
+      "tags": ["javascript", "css", "html", "external api"],
+      "image": "/images/pokesearch.png",
+      "gif": "/gifs/pokesearch.gif",
+      "githuburl": "https://github.com/DanReiss/Pokedex-PokeSearch",
+      "vercelurl": "https://pokesearch-danreiss.vercel.app"
+    },
+    {
+      "name": "To Do List",
+      "year": 2022,
+      "description": "Projeto de uma lista de afazeres ou To Do List.O usuário pode adicionar tarefas, marcar-las como concluídas, ou excluir-las",
+      "tags": ["react", "javascript", "css", "html"],
+      "image": "/images/todov2.png",
+      "gif": "/gifs/todov2.gif",
+      "githuburl": "https://github.com/DanReiss/Todo-React-Tailwind",
+      "vercelurl": "https://todolistv2-danreiss.vercel.app"
     }
 
   ]
