@@ -9,15 +9,21 @@ function ProjectsCarousel({ projects }) {
       <div className="container flex flex-row md:justify-between align-center overflow-auto gap-3 lg:gap-0">
         {
           projects.map((project, i) => (
-            <div key={i} className="shrink-0 w-[145px] lg:w-[18%] md:h-full aspect-[3/4] bg-blue hover:border-2 hover:border-blue transition duration-300">
-              <a
-                href={project.vercelurl}
-                target="_blank"
-                rel="noreferrer"
-                className="grid place-items-end h-full bg-dark_blue/50 hover:bg-gradient-to-t hover:from-dark_gray"
-              >
-                <h4 className="w-full font-roboto text-center uppercase tracking-[0.2em] text-[0.9em] xl:text-lg mb-1">{project.name}</h4>
-              </a>
+            <div key={i} className="group relative shrink-0 w-[145px] lg:w-[18%] md:h-full aspect-[3/4] hover:border-2 hover:border-blue hover:last:text_blue transition duration-300">
+              <img
+                src={project.image}
+                alt={`pré-visualização do projeto ${project.name}`}
+              />
+              <div className="absolute bottom-0 opacity-0 w-full h-full group-hover:opacity-100 bg-gradient-to-t from-dark_gray transition duration-300">
+                <a
+                  href={project.vercelurl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="h-full w-full block"
+                >
+                  <h4 className="absolute w-full bottom-0 font-roboto text-center uppercase tracking-[0.2em] text-[0.9em] xl:text-lg">{project.name}</h4>
+                </a>
+              </div>
             </div>
           ))
          }
