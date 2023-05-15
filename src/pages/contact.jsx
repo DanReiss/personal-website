@@ -17,7 +17,7 @@ function Contact() {
             Me mande uma mensagem ao preencher o formulário abaixo,
             responderei o mais rápido que eu conseguir.
           </p>
-          <div className="w-full lg:w-9/12 m-auto bg-gray px-3 py-4 mt-8 md:mt-16">
+          <div className="w-full lg:w-1/2 m-auto bg-gray px-3 py-4 mt-8 md:mt-16">
             <form action="https://formsubmit.co/c4baf9a12205d942d5f8de171813f333" method="POST">
               <label className="block h-full mb-2">
                 Assunto
