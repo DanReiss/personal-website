@@ -13,7 +13,7 @@ function Contact() {
             <h3 className="font-josefin text-3xl tracking-wide">Contato</h3>
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>
-          <p className="font-light">
+          <p className="text-neutral-300">
             Interessado(a) em tentar algo?
             Me mande uma mensagem ao preencher o formulário abaixo,
             responderei o mais rápido que eu conseguir.

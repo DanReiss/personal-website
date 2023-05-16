@@ -42,7 +42,7 @@ function ProjectItem({ itemdata }) {
       >
         <h4 className="font-josefin text-xl mt-1">{itemdata.name}</h4>
       </a>
-      <p className="font-light">{itemdata.description}</p>
+      <p className="font-light text-neutral-300">{itemdata.description}</p>
     </div>
   );
 }
