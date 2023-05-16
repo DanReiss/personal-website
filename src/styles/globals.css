@@ -32,5 +32,8 @@ a{
   span, p{
     font-size: 1.25rem;
   }
+  a {
+    font-size: large;
+  }
 }
 

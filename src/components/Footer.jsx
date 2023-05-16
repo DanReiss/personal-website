@@ -7,20 +7,20 @@ function Footer() {
     <footer className="relative w-full bg-dark_gray text-white font-light">
       <div className="w-full grid grid-cols-12 px-4 md:m-auto md:w-3/4 md:pt-12">
         <div className="py-8 md:py-0 col-span-12 md:col-span-4">
-          <h3 className="text-xl font-bold">Danilo dos Reis Amaral</h3>
+          <h3 className="text-xl font-bold md:mb-1">Danilo dos Reis Amaral</h3>
           <h4>Desenvolvedor Web</h4>
         </div>
         <div className="col-span-7 md:col-span-4">
-          <h3 className="text-xl font-bold">Contato</h3>
+          <h3 className="text-xl font-bold md:mb-1">Contato</h3>
           <ul>
-            <li>
+            <li className="md:mb-1">
               <Link
                 href="/contact"
               >
                 Formulário de Contato
               </Link>
             </li>
-            <li>
+            <li className="md:mb-1">
               <a
                 href="https://www.linkedin.com/in/danilo-dos-reis-amaral-8a5405234/"
                 target="_blank"
@@ -32,23 +32,23 @@ function Footer() {
           </ul>
         </div>
         <div className="col-span-5 md:col-span-4">
-          <h3 className="text-xl font-bold">Navegação</h3>
+          <h3 className="text-xl font-bold md:mb-1">Navegação</h3>
           <ul>
-            <li>
+            <li className="md:mb-1">
               <Link
                 href="/"
               >
                 Home
               </Link>
             </li>
-            <li>
+            <li className="md:mb-1">
               <Link
                 href="/projects"
               >
                 Projetos
               </Link>
             </li>
-            <li>
+            <li className="md:mb-1">
               <Link
                 href="/contact"
               >
