@@ -77,7 +77,7 @@ function Home({ projects }) {
               <h3 className="font-josefin text-3xl md:text-4xl tracking-wide">Sobre Mim</h3>
               <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2 md:ml-4" />
             </div>
-            <h6 className="mb-3">Desenvolvedor Web Front-End</h6>
+            <h4 className="mb-3 md:text-lg">Desenvolvedor Web Front-End</h4>
             <div className="flex mb-3">
               <Image
                 src="/icons/location.svg"
@@ -86,9 +86,9 @@ function Home({ projects }) {
                 alt="location icon"
                 className="w-fit"
               />
-              <h6 className="ml-2">Brasília-DF</h6>
+              <h4 className="ml-2 md:text-lg">Brasília-DF</h4>
             </div>
-            <p className="font-light">
+            <p className="text-neutral-200">
               Estou estudando e buscando minha primeira oportunidade na área.
               Tenho buscado aprimorar meus conhecimentos e desenvolver-me com eficiência.
               Estou focado em me  aprofundar no JavaScript e ReactJS na área do Front-End.
@@ -96,19 +96,21 @@ function Home({ projects }) {
           </div>
           <div className="container">
             <h3 className="font-josefin text-3xl mb-3 md:mb-6">Acadêmico</h3>
-            <div className="relative grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5 md:gap-6 font-light">
+            <div className="relative grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5 md:gap-6">
               <div className="flex flex-col">
                 <span>06/25</span>
+                <hr className="text-blue" />
                 <span>01/23</span>
               </div>
               <span className="w-2 h-2 bg-white rounded-full" />
-              <span>Análise e Desenvolvimento de Sistemas</span>
+              <span className="text-neutral-200">Análise e Desenvolvimento de Sistemas</span>
               <div className="flex flex-col">
                 <span>10/22</span>
+                <hr className="text-blue" />
                 <span>05/22</span>
               </div>
               <span className="w-2 h-2 bg-white rounded-full" />
-              <div>
+              <div className="text-neutral-200">
                 <span className="sm:after:content-['-']">
                   Desenvolvimento Web - Programador BR
                 </span>
@@ -119,10 +121,11 @@ function Home({ projects }) {
               </div>
               <div className="flex flex-col">
                 <span>10/22</span>
+                <hr className="text-blue" />
                 <span>05/22</span>
               </div>
               <span className="w-2 h-2 bg-white rounded-full vertical-line" />
-              <div>
+              <div className="text-neutral-200">
                 <span className="sm:after:content-['-']">
                   RocketSeat Discover - Trilha Fundamentar
                 </span>

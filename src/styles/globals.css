@@ -30,7 +30,7 @@ a{
 
 @media (min-width: 768px) {
   span, p{
-    font-size: large;
+    font-size: 1.25rem;
   }
 }
 
