@@ -48,9 +48,9 @@ function Navbar({ active }) {
       </div>
       <div className={`${navOpen ? '' : 'w-full translate-y-[-300px] opacity-0'} lg:translate-y-0 lg:opacity-100 transition-all lg:w-1/2 lg:bg-dark_gray z-0 duration-300 bg-gray p-4 px-5`}>
         <ul className="flex flex-col lg:flex-row lg:justify-end text-center uppercase">
-          {routesOptions.map((route, i) => (
+          {routesOptions.map((route) => (
             <li
-              key={i}
+              key={route.name}
               className={`
               ${
                 route.name === active

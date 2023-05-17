@@ -32,8 +32,8 @@ function Projects({ projects }) {
           </p>
           <div className="grid justify-center items-start justify-items-center gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {
-                projectsData.map((itemdata, i) => (
-                  <ProjectItem key={i} itemdata={itemdata} />
+                projectsData.map((itemdata) => (
+                  <ProjectItem key={itemdata.name} itemdata={itemdata} />
                 ))
               }
           </div>

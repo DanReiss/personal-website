@@ -8,8 +8,8 @@ function ProjectsCarousel({ projects }) {
       {/* Container */}
       <div className="container flex flex-row md:justify-between align-center overflow-auto gap-3 lg:gap-0">
         {
-          projects.map((project, i) => (
-            <div key={i} className="group relative shrink-0 w-[145px] lg:w-[18%] md:h-full aspect-[3/4] hover:border-2 hover:border-blue transition duration-300">
+          projects.map((project) => (
+            <div key={project.name} className="group relative shrink-0 w-[145px] lg:w-[18%] md:h-full aspect-[3/4] hover:border-2 hover:border-blue transition duration-300">
               <img
                 src={project.image}
                 alt={`pré-visualização do projeto ${project.name}`}
