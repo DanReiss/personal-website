@@ -117,8 +117,8 @@
       "tags": ["javascript", "css", "html"],
       "image": "/images/todov1.png",
       "gif": "/gifs/todov1.gif",
-      "githuburl": "https://github.com/DanReiss/Todo-React-Tailwind",
-      "vercelurl": "https://github.com/DanReiss/To-Do-List"
+      "githuburl": "https://github.com/DanReiss/To-Do-List",
+      "vercelurl": "https://todolistv1-danreiss.vercel.app"
     }
     
   ]
