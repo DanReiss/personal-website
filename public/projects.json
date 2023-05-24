@@ -1,6 +1,16 @@
 {
   "data":[
     {
+      "name": "Pomodoro Timer",
+      "year": 2023,
+      "description": "Pomodoro é uma técnica de gestão de tempo, frações de tempo nas quais você foca totalmente em algo, divididas por pequenos descanços",
+      "tags": ["css", "javascript", "html"],
+      "image": "/images/pomodoro.png",
+      "gif": "/gifs/pomodoro.gif",
+      "githuburl": "https://github.com/DanReiss/pomodoro-timer",
+      "vercelurl": "https://pomodorotimer-danreiss.vercel.app/"
+    },
+    {
       "name": "Formulário MultiStep",
       "year": 2023,
       "description": "Projeto que simula um formulário de registro em um aplicativo sobre exércicios e vida saudável.O formulário possui validação dos campos e é dividido em várias etapas para melhorar a experiência do usuário.",
@@ -119,7 +129,6 @@
       "gif": "/gifs/todov1.gif",
       "githuburl": "https://github.com/DanReiss/To-Do-List",
       "vercelurl": "https://todolistv1-danreiss.vercel.app"
-    }
-    
+    }  
   ]
 }
