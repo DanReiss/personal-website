@@ -8,11 +8,11 @@ function Footer() {
       <div className="w-full grid grid-cols-12 px-4 md:m-auto md:w-3/4 md:pt-12">
         <div className="py-8 md:py-0 col-span-12 md:col-span-4">
           <h3 className="text-xl font-bold md:mb-1">Danilo dos Reis Amaral</h3>
-          <h4>Desenvolvedor Web</h4>
+          <h4 className="md:text-lg">Desenvolvedor Web</h4>
         </div>
         <div className="col-span-7 md:col-span-4">
           <h3 className="text-xl font-bold md:mb-1">Contato</h3>
-          <ul>
+          <ul className="text-neutral-200">
             <li className="md:mb-1">
               <Link
                 href="/contact"
@@ -33,7 +33,7 @@ function Footer() {
         </div>
         <div className="col-span-5 md:col-span-4">
           <h3 className="text-xl font-bold md:mb-1">Navegação</h3>
-          <ul>
+          <ul className="text-neutral-200">
             <li className="md:mb-1">
               <Link
                 href="/"

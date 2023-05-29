@@ -29,9 +29,6 @@ a{
 
 
 @media (min-width: 768px) {
-  span, p{
-    font-size: 1.25rem;
-  }
   a {
     font-size: large;
   }

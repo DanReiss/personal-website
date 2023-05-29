@@ -77,7 +77,7 @@ function Home({ projects }) {
               <h3 className="font-josefin text-3xl md:text-4xl tracking-wide">Sobre Mim</h3>
               <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2 md:ml-4" />
             </div>
-            <h4 className="mb-3 md:text-lg">Desenvolvedor Web Front-End</h4>
+            <h4 className="mb-3 text-lg md:text-xl">Desenvolvedor Web Front-End</h4>
             <div className="flex mb-3">
               <Image
                 src="/icons/location.svg"
@@ -88,7 +88,7 @@ function Home({ projects }) {
               />
               <h4 className="ml-2 md:text-lg">Brasília-DF</h4>
             </div>
-            <p className="text-neutral-200">
+            <p className="text-neutral-200 md:text-lg">
               Sempre tive afinidade com tecnologia e internet desde criança e procurando por algo
               nesse sentido encontrei a área da programação. Por isso, estou buscando
               minha primeira oportunidade na área. Busco aprimorar meus conhecimentos,
@@ -99,7 +99,7 @@ function Home({ projects }) {
           </div>
           <div className="container">
             <h3 className="font-josefin text-3xl mb-3 md:mb-6">Acadêmico</h3>
-            <div className="relative grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5 md:gap-6">
+            <div className="relative grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5 md:gap-6 md:text-lg">
               <div className="flex flex-col">
                 <span>06/25</span>
                 <hr className="text-blue" />
