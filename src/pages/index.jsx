@@ -89,9 +89,12 @@ function Home({ projects }) {
               <h4 className="ml-2 md:text-lg">Brasília-DF</h4>
             </div>
             <p className="text-neutral-200">
-              Estou estudando e buscando minha primeira oportunidade na área.
-              Tenho buscado aprimorar meus conhecimentos e desenvolver-me com eficiência.
-              Estou focado em me  aprofundar no JavaScript e ReactJS na área do Front-End.
+              Sempre tive afinidade com tecnologia e internet desde criança e procurando por algo
+              nesse sentido encontrei a área da programação. Por isso, estou buscando
+              minha primeira oportunidade na área. Busco aprimorar meus conhecimentos,
+              desenvolver-me com eficiência ao longo dessa jornada. Neste momento, estou focado
+              em me aprofundar em JavaScript e ReactJS, dessa forma me especializando na área do
+              Front-End.
             </p>
           </div>
           <div className="container">
