@@ -23,9 +23,15 @@ function Home({ projects }) {
       <Navbar active="home" />
       <div className="fixed h-screen w-full flex flex-col justify-evenly p-4 bg-dark_blue">
         <div className="text-white text-center container w-full">
-          <h1 className="text-3xl md:text-4xl font-josefin font-bold">DANILO DOS REIS</h1>
-          <hr className="my-1 md:my-2" />
-          <h2 className="text-xl md:text-2xl tracking-[0.2em]">Desenvolvedor Web</h2>
+          <Image
+            src="/images/maintitle.png"
+            width={500}
+            height={20}
+            alt="Danilo dos Reis"
+            className="m-auto"
+          />
+          <hr className="my-8" />
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-josefin">DESENVOLVEDOR WEB</h2>
         </div>
         <div className="flex flex-row justify-center gap-9 md:gap-20">
           <a
@@ -66,6 +72,20 @@ function Home({ projects }) {
             />
           </a>
         </div>
+        <Image
+          src="/images/city.svg"
+          width={350}
+          height={300}
+          alt="background (prédios)"
+          className="z-[-1] hidden md:block absolute bottom-[15vh] left-0 opacity-25 transform scale-x-[-1] lg:w-[450px]"
+        />
+        <Image
+          src="/images/city.svg"
+          width={350}
+          height={300}
+          alt="background (prédios)"
+          className="z-[-1] hidden md:block absolute bottom-[15vh] right-0 opacity-25 lg:scale-200 lg:w-[450px]"
+        />
       </div>
       {/* mostrar o background e espaçar a segunda seção -> */}
       <div className="h-[85vh] w-full" />
