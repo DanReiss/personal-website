@@ -10,7 +10,7 @@ function Footer() {
           <h3 className="text-xl font-bold md:mb-1">Danilo dos Reis Amaral</h3>
           <h4 className="md:text-lg">Desenvolvedor Web</h4>
         </div>
-        <div className="col-span-7 md:col-span-4">
+        <div className="col-span-6 md:col-span-4 md:justify-self-center">
           <h3 className="text-xl font-bold md:mb-1">Contato</h3>
           <ul className="text-neutral-200">
             <li className="md:mb-1">
@@ -31,7 +31,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-5 md:col-span-4">
+        <div className="col-span-6 md:col-span-4 md:justify-self-center">
           <h3 className="text-xl font-bold md:mb-1">Navegação</h3>
           <ul className="text-neutral-200">
             <li className="md:mb-1">
