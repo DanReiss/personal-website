@@ -21,7 +21,7 @@ function ProjectsCarousel({ projects }) {
                   rel="noreferrer"
                   className="h-full w-full block"
                 >
-                  <h4 className="absolute w-full bottom-0 font-roboto text-center uppercase tracking-[0.2em] text-[0.9em] xl:text-lg">{project.name}</h4>
+                  <h4 className="absolute w-full bottom-0 font-roboto text-center uppercase tracking-[0.2em] text-[0.85em] xl:text-lg">{project.name}</h4>
                 </a>
               </div>
             </div>

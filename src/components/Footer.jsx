@@ -11,16 +11,16 @@ function Footer() {
           <h4 className="md:text-lg">Desenvolvedor Web</h4>
         </div>
         <div className="col-span-6 md:col-span-4 md:justify-self-center">
-          <h3 className="text-xl font-bold md:mb-1">Contato</h3>
+          <h3 className="text-xl font-bold mb-1">Contato</h3>
           <ul className="text-neutral-200">
-            <li className="md:mb-1">
+            <li className="mb-1">
               <Link
                 href="/contact"
               >
                 Formulário de Contato
               </Link>
             </li>
-            <li className="md:mb-1">
+            <li className="mb-1">
               <a
                 href="https://www.linkedin.com/in/danilo-dos-reis-amaral-8a5405234/"
                 target="_blank"
@@ -32,23 +32,23 @@ function Footer() {
           </ul>
         </div>
         <div className="col-span-6 md:col-span-4 md:justify-self-center">
-          <h3 className="text-xl font-bold md:mb-1">Navegação</h3>
+          <h3 className="text-xl font-bold mb-1">Navegação</h3>
           <ul className="text-neutral-200">
-            <li className="md:mb-1">
+            <li className="mb-1">
               <Link
                 href="/"
               >
                 Home
               </Link>
             </li>
-            <li className="md:mb-1">
+            <li className="mb-1">
               <Link
                 href="/projects"
               >
                 Projetos
               </Link>
             </li>
-            <li className="md:mb-1">
+            <li className="mb-1">
               <Link
                 href="/contact"
               >

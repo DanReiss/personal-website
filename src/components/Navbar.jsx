@@ -55,7 +55,7 @@ function Navbar({ active }) {
               ${
                 route.name === active
                   ? 'bg-blue mb-2 text-lg'
-                  : 'hover:bg-dark_gray'
+                  : 'hover:bg-dark_gray lg:hover:bg-gray'
               } 
               mb-2 lg:mb-0 lg:ml-4 lg:px-4 text-lg transition-all`}
             >
