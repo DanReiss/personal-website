@@ -91,16 +91,6 @@
       "vercelurl": "https://relogiodigital-danreiss.vercel.app"
     },
     {
-      "name": "Simple Timer",
-      "year": 2022,
-      "description": "Timer simples desenvolvido usando JavaScript. O usuário pode iniciar a contagem, pausar-la ou reiniciar-la.",
-      "tags": ["javascript", "css", "html"],
-      "image": "/images/simpletimer.png",
-      "gif": "/gifs/simpletimer.gif",
-      "githuburl": "https://github.com/DanReiss/Timer-simples",
-      "vercelurl": "https://simpletimer-danreiss.vercel.app"
-    },
-    {
       "name": "Jogo da Memória",
       "year": 2022,
       "description": "Jogo da Memória feito com JavaScript em aula do curso Programador-BR. As cartas possuem animações 3D.",
