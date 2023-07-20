@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function ProjectsCarousel({ projects }) {
   return (
@@ -10,7 +11,9 @@ function ProjectsCarousel({ projects }) {
         {
           projects.map((project) => (
             <div key={project.name} className="group relative shrink-0 w-[145px] lg:w-[18%] md:h-full aspect-[3/4] hover:border-2 hover:border-blue transition duration-300">
-              <img
+              <Image
+                width={400}
+                height={400}
                 src={project.image}
                 alt={`pré-visualização do projeto ${project.name}`}
               />
