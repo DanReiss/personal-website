@@ -53,7 +53,7 @@ function Navbar({ active }) {
               key={route.name}
               className={`
               ${
-                route.name === active
+                route.route === active
                   ? 'bg-blue mb-2 text-lg'
                   : 'hover:bg-dark_gray lg:hover:bg-gray'
               } 

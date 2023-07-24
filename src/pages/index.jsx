@@ -2,10 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 
 import getStaticData from 'lib/getStaticData';
-import Navbar from '@/components/Navbar';
 import ItemSkill from '@/components/ItemSkill';
 import ProjectsCarousel from '@/components/ProjectsCarousel';
-import Footer from '@/components/Footer';
+import { Title2 } from '@/components/Typography';
 
 export async function getStaticProps() {
   const projects = await getStaticData();
@@ -20,13 +19,12 @@ function Home({ projects }) {
 
   return (
     <>
-      <Navbar active="home" />
       <div className="fixed h-screen w-full flex flex-col justify-evenly p-4 bg-dark_blue">
         <div className="text-white text-center container w-full">
           <Image
             src="/images/maintitle.png"
             width={500}
-            height={20}
+            height={70}
             alt="Danilo dos Reis"
             className="m-auto"
           />
@@ -93,10 +91,7 @@ function Home({ projects }) {
         <span className="bg-dark_blue w-full h-1 inline-block" />
         <section className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <div className="mb-8 md:mb-12 container">
-            <div className="flex mb-3 md:mb-6">
-              <h3 className="font-josefin text-3xl md:text-4xl tracking-wide">Sobre Mim</h3>
-              <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2 md:ml-4" />
-            </div>
+            <Title2 withDecoration>Sobre Mim</Title2>
             <h4 className="mb-3 text-lg md:text-xl">Desenvolvedor Web Front-End</h4>
             <div className="flex mb-3">
               <Image
@@ -118,7 +113,7 @@ function Home({ projects }) {
             </p>
           </div>
           <div className="container">
-            <h3 className="font-josefin text-3xl mb-3 md:mb-6">Acadêmico</h3>
+            <Title2>Acadêmico</Title2>
             <div className="relative grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5 md:gap-6 md:text-lg">
               <div className="flex flex-col">
                 <span>06/25</span>
@@ -162,11 +157,8 @@ function Home({ projects }) {
           </div>
         </section>
         <section className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <div className="flex mb-6 md:mb-9 container">
-            <h3 className="font-josefin text-3xl tracking-wide">Competências</h3>
-            <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
-          </div>
-          <div className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center container py-4">
+          <Title2 withDecoration className="container">Competências</Title2>
+          <div className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center container pt-5">
             <ItemSkill imagePath="/icons/js.svg" name="JavaScript" />
             <ItemSkill imagePath="/icons/react.svg" name="React" />
             <ItemSkill imagePath="/icons/html.svg" name="HTML" />
@@ -180,13 +172,12 @@ function Home({ projects }) {
           </div>
         </section>
         <section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <h3 className="container text-3xl mb-6">Projetos Recentes</h3>
+          <Title2 className="container">Projetos Recentes</Title2>
           { projectsData
             ? <ProjectsCarousel projects={projectsData} />
             : ''}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

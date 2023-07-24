@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { TextSM } from './Typography';
 
 function ProjectItem({ itemdata }) {
   return (
@@ -42,7 +43,7 @@ function ProjectItem({ itemdata }) {
       >
         <h4 className="font-josefin text-xl mt-1">{itemdata.name}</h4>
       </a>
-      <p className="font-light text-neutral-200">{itemdata.description}</p>
+      <TextSM>{itemdata.description}</TextSM>
     </div>
   );
 }
