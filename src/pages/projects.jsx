@@ -1,6 +1,5 @@
 import React from 'react';
 import getStaticData from 'lib/getStaticData';
-import Footer from '@/components/Footer';
 import ProjectItem from '@/components/ProjectItem';
 import { Title2, Text } from '@/components/Typography';
 
