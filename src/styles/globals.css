@@ -27,6 +27,12 @@ a{
   background-color: white;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: '';
+  cursor: pointer;
+}
 
 @media (min-width: 768px) {
   a {

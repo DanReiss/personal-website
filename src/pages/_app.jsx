@@ -26,7 +26,7 @@ function App({ Component, pageProps, router }) {
       <Head>
         <title>Danilo dos Reis Amaral</title>
         <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon" />
-        <meta name="description" content="Olá, eu sou o Danilo dos Reis.Estou começando na área de desenvolvimento de aplicações web, focado principalmente no Front-end" />
+        <meta name="description" content="Olá, eu sou o Danilo dos Reis. Estou começando na área de desenvolvimento de aplicações web, focado principalmente no Front-end" />
       </Head>
       <Navbar active={router.route} />
       <Component {...pageProps} />
