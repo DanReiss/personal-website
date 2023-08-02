@@ -22,7 +22,7 @@ function Footer() {
             </li>
             <li className="mb-1">
               <a
-                href="https://www.linkedin.com/in/danilo-dos-reis-amaral-8a5405234/"
+                href="https://www.linkedin.com/in/daniloreiss"
                 target="_blank"
                 rel="noreferrer"
               >

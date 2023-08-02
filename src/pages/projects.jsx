@@ -43,8 +43,8 @@ function Projects({ projects }) {
           <Text className="mb-4">
             Aplicações que desenvolvi como forma de estudo.
             Os projetos estão dispostos em ordem cronológica começando
-            do mais recente.Para mais informações acesse o repositório
-            de cada um dos projetos no Github, clicando no ícone do GitHub.
+            do mais recente. Para mais informações acesse o repositório
+            de cada um dos projetos no Github, você pode fazer isso clicando no ícone do GitHub.
           </Text>
           <Tags selectedTags={selectedTags} setSelectedTags={setSelectedTags} />
           <div className="grid justify-center items-start justify-items-center gap-12 sm:grid-cols-2 lg:grid-cols-3 my-8">

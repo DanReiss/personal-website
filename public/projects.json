@@ -3,7 +3,7 @@
     {
       "name": "Pomodoro Timer",
       "year": 2023,
-      "description": "Pomodoro é uma técnica de gestão de tempo, frações de tempo nas quais você foca totalmente em algo, divididas por pequenos descanços",
+      "description": "Pomodoro é uma técnica de gestão de tempo, frações de tempo nas quais você foca totalmente em algo, divididas por pequenos descanços.",
       "tags": ["css", "javascript", "html"],
       "image": "/images/pomodoro.png",
       "gif": "/gifs/pomodoro.gif",
@@ -13,7 +13,7 @@
     {
       "name": "Formulário MultiStep",
       "year": 2023,
-      "description": "Projeto que simula um formulário de registro em um aplicativo sobre exércicios e vida saudável.O formulário possui validação dos campos e é dividido em várias etapas para melhorar a experiência do usuário.",
+      "description": "Projeto que simula um formulário de registro em um aplicativo sobre exercícios e vida saudável. O formulário possui validação dos campos e é dividido em várias etapas para melhorar a experiência do usuário.",
       "tags": ["react", "javascript", "sass"],
       "image": "/images/stepform.png",
       "gif": "/gifs/stepform.gif",
@@ -23,7 +23,7 @@
     {
       "name": "KanbanBoard",
       "year": 2022,
-      "description": " 'Kanban Board' digital, método de controle de fluxo de trabalho, muito usado por empresas. O projeto usa o sistema 'Drag and Drop' do JavaScript para que o usuário possa interagir com as tarefas.",
+      "description": " 'Kanban Board' digital, método de controle de fluxo de trabalho, muito utilizado por empresas como uma metodologia ágil. O projeto usa o sistema 'Drag and Drop' do JavaScript para que o usuário possa interagir com as tarefas.",
       "tags": ["javascript", "bootstrap", "css"],
       "image": "/images/kanban.png",
       "gif": "/gifs/kanbandesktop.gif",
@@ -53,7 +53,7 @@
     {
       "name": "Bootstrap Page",
       "year": 2022,
-      "description": "Website falso de uma empresa de cursos e aulas online. Foi desenvolvido usando classes do framework Bootstrap, dessa forma pude me introduzir no framework na prática.",
+      "description": "Website Fictício de uma empresa de cursos e aulas online. Foi desenvolvido usando classes do framework Bootstrap, dessa forma pude me introduzir no framework na prática.",
       "tags": ["bootstrap", "css", "html"],
       "image": "/images/bootstrappage.png",
       "gif": "/gifs/bootstrappage.gif",
@@ -73,7 +73,7 @@
     {
       "name": "To Do List V2-React",
       "year": 2022,
-      "description": "Lista de afazeres ou To Do List. O usuário pode adicionar tarefas, marcar-las como concluídas, ou excluir-las.",
+      "description": "Lista de afazeres ou To-Do List. O usuário pode adicionar tarefas, marcar-las como concluídas, ou excluir-las.",
       "tags": ["react", "javascript", "css", "html"],
       "image": "/images/todov2.png",
       "gif": "/gifs/todov2.gif",
@@ -113,7 +113,7 @@
     {
       "name": "To Do List V1-Javascript",
       "year": 2022,
-      "description": "Lista de afazeres ou To Do List. O usuário pode adicionar tarefas, marcar-las como concluídas, editar-las ou excluir-las.",
+      "description": "Lista de afazeres ou To-Do List desenvolvida usando como base projeto desenvolvido por Matheus Battisti. O usuário pode adicionar tarefas, marcar-las como concluídas, editar-las ou excluir-las.",
       "tags": ["javascript", "css", "html"],
       "image": "/images/todov1.png",
       "gif": "/gifs/todov1.gif",
