@@ -1,6 +1,16 @@
 {
   "data":[
     {
+      "name": "Coffee Shop Landing Page",
+      "year": 2023,
+      "description": "Landing Page de uma Cafeteria, o usuário pode visualizar os horários, produtos recentemente lançados e uma visão geral da loja. Estilização feita priorizando telas mobile.",
+      "tags": ["sass", "javascript", "html"],
+      "image": "/images/coffeeshop.png",
+      "gif": "/gifs/coffeeshop.gif",
+      "githuburl": "https://github.com/DanReiss/coffee-beans",
+      "vercelurl": "https://coffee-beans-danreiss.vercel.app"
+    },
+    {
       "name": "Pomodoro Timer",
       "year": 2023,
       "description": "Pomodoro é uma técnica de gestão de tempo, frações de tempo nas quais você foca totalmente em algo, divididas por pequenos descanços.",
@@ -74,7 +84,7 @@
       "name": "To Do List V2-React",
       "year": 2022,
       "description": "Lista de afazeres ou To-Do List. O usuário pode adicionar tarefas, marcar-las como concluídas, ou excluir-las.",
-      "tags": ["react", "javascript", "css", "html"],
+      "tags": ["react", "javascript", "tailwind", "html"],
       "image": "/images/todov2.png",
       "gif": "/gifs/todov2.gif",
       "githuburl": "https://github.com/DanReiss/Todo-React-Tailwind",
