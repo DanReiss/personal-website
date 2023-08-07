@@ -9,9 +9,9 @@ function Contact() {
       <Head>
         <title>Danilo dos Reis Amaral | Contato</title>
       </Head>
-      <div className="w-full min-h-screen text-white bg-dark_blue pt-[66px] px-6 pb-4">
+      <div className="w-full min-h-screen text-white bg-dark_blue px-6 py-12">
         <div className="container">
-          <div className="flex mb-2 mt-8">
+          <div className="flex mb-2">
             <h3 className="font-josefin text-3xl tracking-wide">Contato</h3>
             <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
           </div>

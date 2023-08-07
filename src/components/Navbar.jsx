@@ -21,7 +21,7 @@ function Navbar({ active }) {
   ];
 
   return (
-    <div className="fixed w-full z-10 text-white font-light tracking-widest lg:bg-dark_gray lg:flex lg:flex-row lg:px-16">
+    <div className="sticky top-0 w-full z-10 text-white font-light tracking-widest lg:bg-dark_gray lg:flex lg:flex-row lg:px-16">
       <div className="relative z-20 w-full lg:w-1/2 flex flex-row justify-between items-center bg-dark_gray p-4 px-5 lg:p-0">
         <Link href="/">
           <Image
@@ -46,7 +46,7 @@ function Navbar({ active }) {
           />
         </button>
       </div>
-      <div className={`${navOpen ? '' : 'w-full translate-y-[-300px] opacity-0'} lg:translate-y-0 lg:opacity-100 transition-all lg:w-1/2 lg:bg-dark_gray z-0 duration-300 bg-gray p-4 px-5`}>
+      <div className={`absolute lg:static border-b-4 border-blue lg:border-0 ${navOpen ? 'w-full' : 'w-full translate-y-[-300px] opacity-0'} lg:translate-y-0 lg:opacity-100 transition-all lg:w-1/2 lg:bg-dark_gray z-0 duration-300 bg-gray p-4 px-5`}>
         <ul className="flex flex-col lg:flex-row lg:justify-end text-center uppercase">
           {routesOptions.map((route) => (
             <li
@@ -62,6 +62,7 @@ function Navbar({ active }) {
               <Link
                 href={route.route}
                 className="block"
+                onClick={() => { setTimeout(() => { setNavOpen(false); }, 500); }}
               >
                 {route.name}
 

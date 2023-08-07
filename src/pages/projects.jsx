@@ -37,7 +37,7 @@ function Projects({ projects }) {
       <Head>
         <title>Danilo dos Reis Amaral | Projetos</title>
       </Head>
-      <div className="w-full text-white bg-dark_blue pt-[66px] px-6 pb-4">
+      <div className="w-full min-h-screen text-white bg-dark_blue px-6 py-12">
         <div className="container">
           <Title2 withDecoration>Projetos</Title2>
           <Text className="mb-4">
@@ -47,13 +47,23 @@ function Projects({ projects }) {
             de cada um dos projetos no Github, você pode fazer isso clicando no ícone do GitHub.
           </Text>
           <Tags selectedTags={selectedTags} setSelectedTags={setSelectedTags} />
-          <div className="grid justify-center items-start justify-items-center gap-12 sm:grid-cols-2 lg:grid-cols-3 my-8">
-            {
-                projectsData.map((itemdata) => (
-                  <ProjectItem key={itemdata.name} itemdata={itemdata} />
-                ))
-              }
-          </div>
+          {
+            projectsData.length
+              ? (
+                <div className="grid justify-center items-start justify-items-center gap-12 sm:grid-cols-2 lg:grid-cols-3 my-8">
+                  {
+                    projectsData.map((itemdata) => (
+                      <ProjectItem key={itemdata.name} itemdata={itemdata} />
+                    ))
+                   }
+                </div>
+              )
+              : (
+                <div className="flex items-center justify-center h-max">
+                  <span>Nenhum projeto encontrado correspondente aos filtros selecionados</span>
+                </div>
+              )
+          }
         </div>
       </div>
     </>

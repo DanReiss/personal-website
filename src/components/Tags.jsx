@@ -16,6 +16,10 @@ function Tags({ selectedTags, setSelectedTags }) {
   function addTag() {
     if (selectValue) { // adicionar verificação para evitar itens duplicados
       const tagSelected = tagsOptions.find((tagOption) => tagOption.value === selectValue);
+      const isRepeated = selectedTags.some((tag) => tag.value === tagSelected.value);
+
+      if (isRepeated) return;
+
       setSelectedTags([...selectedTags, tagSelected]);
     }
   }
