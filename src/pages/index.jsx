@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-
+import { motion } from 'framer-motion';
 import getStaticData from 'lib/getStaticData';
 import ItemSkill from '@/components/ItemSkill';
 import ProjectsCarousel from '@/components/ProjectsCarousel';
@@ -17,6 +17,18 @@ export async function getStaticProps() {
 function Home({ projects }) {
   const projectsData = projects.data.slice(0, 4);
 
+  const links = {
+    initial: { filter: 'drop-shadow(0 0 0 transparent)' },
+    hover: { filter: 'drop-shadow(0 4px 0 #004DA7)' },
+  };
+
+  const opacityProps = {
+    initial: { opacity: 0 },
+    whileInView: { opacity: 1 },
+    viewport: { once: true },
+    transition: { duration: 0.3, delay: 0.2 },
+  };
+
   return (
     <>
       <div className="fixed h-screen w-full flex flex-col justify-evenly p-4 bg-dark_blue">
@@ -28,13 +40,21 @@ function Home({ projects }) {
             alt="Danilo dos Reis"
             className="m-auto"
           />
-          <hr className="my-8" />
+          <motion.hr
+            className="my-8"
+            initial={{ clipPath: 'inset(0% 100% 0% 100%)' }}
+            animate={{ clipPath: 'inset(0% 0% 0% 0%)' }}
+            transition={{ duration: 0.7 }}
+          />
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-josefin">DESENVOLVEDOR WEB</h2>
         </div>
         <div className="flex flex-row justify-center gap-9 md:gap-20">
-          <a
+          <motion.a
             href="https://github.com/DanReiss"
             target="__blank"
+            whileHover="hover"
+            initial="initial"
+            variants={links}
           >
             <Image
               src="/icons/github.svg"
@@ -43,11 +63,14 @@ function Home({ projects }) {
               alt="meu github"
               className="md:scale-125"
             />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="mailto:danreis.ctt@gmail.com"
             target="_blank"
             rel="noreferrer"
+            whileHover="hover"
+            initial="initial"
+            variants={links}
           >
             <Image
               src="/icons/email.svg"
@@ -56,10 +79,13 @@ function Home({ projects }) {
               alt="meu email"
               className="h-auto w-auto md:scale-125"
             />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.linkedin.com/in/daniloreiss"
             target="__blank"
+            whileHover="hover"
+            initial="initial"
+            variants={links}
           >
             <Image
               src="/icons/linkedin.svg"
@@ -68,28 +94,35 @@ function Home({ projects }) {
               alt="meu linkedin"
               className="md:scale-125"
             />
-          </a>
+          </motion.a>
         </div>
-        <Image
-          src="/images/city.svg"
-          width={350}
-          height={300}
-          alt="background (prédios)"
-          className="z-[-1] hidden md:block absolute bottom-[15vh] left-0 opacity-25 transform scale-x-[-1] lg:w-[450px]"
-        />
-        <Image
-          src="/images/city.svg"
-          width={350}
-          height={300}
-          alt="background (prédios)"
-          className="z-[-1] hidden md:block absolute bottom-[15vh] right-0 opacity-25 lg:scale-200 lg:w-[450px]"
-        />
+        <motion.div
+          initial={{ scale: 1.5, filter: 'blur(9px)' }}
+          animate={{ scale: 1, filter: 'blur(3px)' }}
+          transition={{ duration: 0.7, type: 'spring' }}
+          className="z-[-1] absolute left-0 hidden md:block bottom-[15vh] w-screen"
+        >
+          <Image
+            src="/images/city.svg"
+            width={350}
+            height={300}
+            alt="background (prédios)"
+            className="inline opacity-25 transform scale-x-[-1] lg:w-[450px]"
+          />
+          <Image
+            src="/images/city.svg"
+            width={350}
+            height={300}
+            alt="background (prédios)"
+            className="inline float-right opacity-25 lg:scale-200 lg:w-[450px]"
+          />
+        </motion.div>
       </div>
       {/* mostrar o background e espaçar a segunda seção -> */}
       <div className="h-[85vh] w-full" />
       <main className="relative bg-gray">
         <span className="bg-dark_blue w-full h-1 inline-block" />
-        <section className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
+        <motion.section {...opacityProps} className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <div className="mb-8 md:mb-12 container">
             <Title2 withDecoration>Sobre Mim</Title2>
             <h4 className="mb-3 text-lg md:text-xl">Desenvolvedor Web Front-End</h4>
@@ -154,8 +187,8 @@ function Home({ projects }) {
               </div>
             </div>
           </div>
-        </section>
-        <section className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
+        </motion.section>
+        <motion.section {...opacityProps} className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 withDecoration className="container">Competências</Title2>
           <div className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center container pt-5">
             <ItemSkill imagePath="/icons/js.svg" name="JavaScript" />
@@ -169,13 +202,13 @@ function Home({ projects }) {
             <ItemSkill imagePath="/icons/database.svg" name="SQL" />
             <ItemSkill name="API REST" />
           </div>
-        </section>
-        <section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
+        </motion.section>
+        <motion.section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 className="container">Projetos Recentes</Title2>
           { projectsData
             ? <ProjectsCarousel projects={projectsData} />
             : ''}
-        </section>
+        </motion.section>
       </main>
     </>
   );

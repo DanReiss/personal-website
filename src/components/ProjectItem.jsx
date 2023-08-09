@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
+import { animate, useInView } from 'framer-motion';
 import { TextSM } from './Typography';
 
 function ProjectItem({ itemdata }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    animate(ref.current, { opacity: [0, 1] }, {
+      duration: 0.3, delay: 0.1,
+    });
+  }, [isInView]);
+
   return (
     <div
-      className="my-4 max-w-[300px] h-full rounded-3xl p-4 bg-gray transition hover:scale-105"
+      ref={ref}
+      className="teste my-4 max-w-[300px] h-full rounded-3xl p-4 bg-gray transition hover:scale-105"
     >
       <div className="relative max-h-[300px] aspect-[4/4] bg-gray/[0.8] rounded-3xl">
         <a
