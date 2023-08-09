@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 function Navbar({ active }) {
   const [navOpen, setNavOpen] = useState(false);
@@ -19,6 +20,11 @@ function Navbar({ active }) {
       route: '/contact',
     },
   ];
+
+  const navList = {
+    hidden: { top: '-300px' },
+    show: { top: 'initial' },
+  };
 
   return (
     <div className="sticky top-0 w-full z-10 text-white font-light tracking-widest lg:bg-dark_gray lg:flex lg:flex-row lg:px-16">
@@ -46,7 +52,12 @@ function Navbar({ active }) {
           />
         </button>
       </div>
-      <div className={`absolute lg:static border-b-4 border-blue lg:border-0 ${navOpen ? 'w-full' : 'w-full translate-y-[-300px] opacity-0'} lg:translate-y-0 lg:opacity-100 transition-all lg:w-1/2 lg:bg-dark_gray z-0 duration-300 bg-gray p-4 px-5`}>
+      <motion.div
+        animate={navOpen ? 'show' : 'hidden'}
+        variants={navList}
+        transition={{ type: 'tween', duration: 0.3, ease: 'linear' }}
+        className="w-full z-0 absolute top-[-300px] lg:static border-b-4 border-blue lg:border-0 bg-gray lg:w-1/2 lg:bg-dark_gray p-4 px-5"
+      >
         <ul className="flex flex-col lg:flex-row lg:justify-end text-center uppercase">
           {routesOptions.map((route) => (
             <li
@@ -65,12 +76,11 @@ function Navbar({ active }) {
                 onClick={() => { setTimeout(() => { setNavOpen(false); }, 500); }}
               >
                 {route.name}
-
               </Link>
             </li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 }
