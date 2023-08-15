@@ -16,7 +16,7 @@ function ProjectItem({ itemdata }) {
   return (
     <div
       ref={ref}
-      className="teste my-4 max-w-[300px] h-full rounded-3xl p-4 bg-gray transition hover:scale-105"
+      className="my-4 max-w-[300px] h-full rounded-3xl p-4 bg-gray"
     >
       <div className="relative max-h-[300px] aspect-[4/4] bg-gray/[0.8] rounded-3xl">
         <a
@@ -24,7 +24,7 @@ function ProjectItem({ itemdata }) {
           target="_blank"
           rel="noreferrer"
           aria-label="Visite o projeto em funcionamento"
-          className="block w-full h-full text-dark_blue"
+          className="block w-full h-full text-dark_blue transition hover:saturate-50"
         >
           <Image
             src={itemdata.gif}
@@ -39,7 +39,7 @@ function ProjectItem({ itemdata }) {
           target="_blank"
           rel="noreferrer"
           aria-label="Visite o repositório do projeto [nome-do-projeto]"
-          className="absolute bottom-0 m-4"
+          className="absolute bottom-0 m-4 transition hover:scale-[1.075]"
         >
           <Image
             src="/icons/github.svg"
