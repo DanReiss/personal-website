@@ -36,7 +36,10 @@ function ProjectsCarousel({ projects }) {
                   rel="noreferrer"
                   className="h-full w-full block"
                 >
-                  <h4 className="absolute w-full bottom-0 font-roboto text-center uppercase tracking-[0.2em] text-[0.85em] xl:text-lg">{project.name}</h4>
+                  <div className="absolute bottom-2 mx-2">
+                    <h4 className="text-lg xl:text-xl font-bold">{project.name}</h4>
+                    <p className="line-clamp-3 text-sm lg:text-base leading-5">{project.description}</p>
+                  </div>
                 </a>
               </div>
             </div>
