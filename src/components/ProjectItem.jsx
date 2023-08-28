@@ -18,7 +18,7 @@ function ProjectItem({ itemdata }) {
       ref={ref}
       className="my-4 max-w-[300px] h-full rounded-3xl p-4 bg-gray"
     >
-      <div className="relative max-h-[300px] aspect-[4/4] bg-gray/[0.8] rounded-3xl">
+      <div className="relative max-h-[300px] aspect-[4/4] bg-gray/[0.8]">
         <a
           href={itemdata.vercelurl}
           target="_blank"
@@ -31,7 +31,7 @@ function ProjectItem({ itemdata }) {
             alt="pre-visualização do projeto em execução"
             height={500}
             width={500}
-            className="object-cover w-full h-full rounded-3xl"
+            className="object-cover w-full h-full rounded-lg"
           />
         </a>
         <a
