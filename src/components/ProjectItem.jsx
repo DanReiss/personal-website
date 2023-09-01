@@ -4,18 +4,24 @@ import { animate, useInView } from 'framer-motion';
 import { TextSM } from './Typography';
 
 function ProjectItem({ itemdata }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const projectDiv = useRef(null);
+  const gifVideo = useRef(null);
+  const isInView = useInView(projectDiv, { once: true });
 
   useEffect(() => {
-    animate(ref.current, { opacity: [0, 1] }, {
+    animate(projectDiv.current, { opacity: [0, 1] }, {
       duration: 0.3, delay: 0.1,
     });
+
+    const gifSource = gifVideo.current.querySelector('source');
+
+    gifSource.src = gifSource.dataset.src;
+    gifVideo.current.load();
   }, [isInView]);
 
   return (
     <div
-      ref={ref}
+      ref={projectDiv}
       className="my-4 max-w-[300px] h-full rounded-3xl p-4 bg-gray"
     >
       <div className="relative max-h-[300px] aspect-[4/4] bg-gray/[0.8]">
@@ -26,13 +32,15 @@ function ProjectItem({ itemdata }) {
           aria-label="Visite o projeto em funcionamento"
           className="block w-full h-full text-dark_blue transition hover:saturate-50"
         >
-          <Image
-            src={itemdata.gif}
-            alt="pre-visualização do projeto em execução"
-            height={500}
-            width={500}
+          <video
+            autoPlay
+            loop
+            muted
+            ref={gifVideo}
             className="object-cover w-full h-full rounded-lg"
-          />
+          >
+            <source data-src={itemdata.gif} />
+          </video>
         </a>
         <a
           href={itemdata.githuburl}
