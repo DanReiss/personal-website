@@ -5,6 +5,11 @@
 - Visualizar meus projetos e minhas qualificações
 - Desenvolvido com Next.js, React e Tailwind
 
+## Como executar
+- Clone este repositório (https://github.com/DanReiss/personal-website)
+- Instale as dependências usando `npm install` ou `yarn add`
+- Execute o projeto usando `npm start` ou `yarn start`
+
 ## Preview 
 
 ![personalwebsite](https://github.com/DanReiss/personal-website/assets/100306227/a094cae7-d600-40ab-bb25-3163d887513a)
