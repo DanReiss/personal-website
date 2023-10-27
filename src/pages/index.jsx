@@ -137,11 +137,12 @@ function Home({ projects }) {
               <h4 className="ml-2 md:text-lg">Brasília-DF</h4>
             </div>
             <p className="text-neutral-200 md:text-lg">
-              Sempre tive afinidade com tecnologia e a internet desde novo e procurando por algo
-              nesse sentido encontrei a área da programação. Por isso, estou buscando minha
-              primeira oportunidade na área. Ao longo dessa jornada busco aprimorar meus
-              conhecimentos e me desenvolver como profissional. Agora estou focado em me aprofundar
-              em JavaScript e ReactJS, dessa forma me especializando na área do Front-End.
+              Sempre tive afinidade com tecnologia e a internet desde muito novo e procurando
+              por algo nesse sentido encontrei a programação. Além da tecnologia,
+              tenho uma paixão pela arte, especialmente músicas e narrativas. Atualmente,
+              meu foco está em aprofundar meu conhecimento em JavaScript e ReactJS,
+              para me especializar no Desenvolvimento Front-End, enquanto também
+              estou dedicando tempo ao estudo de Bancos de Dados, NodeJS e Algoritmos.
             </p>
           </div>
           <div className="container">

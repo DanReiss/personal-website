@@ -37,7 +37,7 @@ function Tags({ selectedTags, setSelectedTags }) {
           <option value="placeholder" disabled>Select a Tag Here</option>
           {
             tagsOptions.map((tagOption) => (
-              <option value={tagOption.value}>{tagOption.label}</option>
+              <option key={tagOption.value} value={tagOption.value}>{tagOption.label}</option>
             ))
           }
         </select>
@@ -52,6 +52,7 @@ function Tags({ selectedTags, setSelectedTags }) {
           selectedTags.length > 0
             ? selectedTags.map((tag) => (
               <motion.span
+                key={tag.value}
                 animate={{ scale: [0, 1] }}
                 className="flex flex-row w-fit gap-3 bg-light_gray text-blue px-2 py-1"
               >
