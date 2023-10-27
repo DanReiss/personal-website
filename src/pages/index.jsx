@@ -23,8 +23,8 @@ function Home({ projects }) {
   };
 
   const opacityProps = {
-    initial: { opacity: 0 },
-    whileInView: { opacity: 1 },
+    initial: { opacity: 0, y: '50px' },
+    whileInView: { opacity: 1, y: '0px' },
     viewport: { once: true },
     transition: { duration: 0.3, delay: 0.2 },
   };
@@ -189,9 +189,9 @@ function Home({ projects }) {
             </div>
           </div>
         </motion.section>
-        <motion.section {...opacityProps} className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
+        <section className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 withDecoration className="container">Competências</Title2>
-          <div className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center container pt-5">
+          <motion.div {...opacityProps} className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center container pt-5">
             <ItemSkill imagePath="/icons/js.svg" name="JavaScript" />
             <ItemSkill imagePath="/icons/react.svg" name="React" />
             <ItemSkill imagePath="/icons/html.svg" name="HTML" />
@@ -202,8 +202,8 @@ function Home({ projects }) {
             <ItemSkill name="SEO" />
             <ItemSkill imagePath="/icons/database.svg" name="SQL" />
             <ItemSkill name="API REST" />
-          </div>
-        </motion.section>
+          </motion.div>
+        </section>
         <motion.section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 className="container">Projetos Recentes</Title2>
           { projectsData

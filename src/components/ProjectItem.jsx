@@ -4,24 +4,20 @@ import { animate, useInView } from 'framer-motion';
 import { TextSM } from './Typography';
 
 function ProjectItem({ itemdata }) {
-  const projectDiv = useRef(null);
-  const gifVideo = useRef(null);
-  const isInView = useInView(projectDiv, { once: true });
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
-    animate(projectDiv.current, { opacity: [0, 1] }, {
-      duration: 0.3, delay: 0.1,
-    });
-
-    const gifSource = gifVideo.current.querySelector('source');
-
-    gifSource.src = gifSource.dataset.src;
-    gifVideo.current.load();
+    if (isInView) {
+      animate(ref.current, { opacity: [0, 1], transform: ['scale(0.6)', 'scale(1)'] }, {
+        delay: 0.1,
+      });
+    }
   }, [isInView]);
 
   return (
     <div
-      ref={projectDiv}
+      ref={ref}
       className="my-4 max-w-[300px] h-full rounded-3xl p-4 bg-gray"
     >
       <div className="relative max-h-[300px] aspect-[4/4] bg-gray/[0.8]">
@@ -36,7 +32,7 @@ function ProjectItem({ itemdata }) {
             autoPlay
             loop
             muted
-            ref={gifVideo}
+            ref={ref}
             className="object-cover w-full h-full rounded-lg"
           >
             <source data-src={itemdata.gif} />

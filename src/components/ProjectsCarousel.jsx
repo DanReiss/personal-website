@@ -10,8 +10,8 @@ function ProjectsCarousel({ projects }) {
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
-    animate('[data-animate]', { top: ['-600px', '0px'], left: ['-300px', '0px'], filter: ['blur(15px)', 'none'] }, {
-      duration: 0.3, delay: stagger(0.2), viewport: { once: true },
+    animate('[data-animate]', { left: ['-600px', '0px'], opacity: [0, 1], filter: ['blur(10px)', 'none'] }, {
+      duration: 0.2, delay: stagger(0.1), viewport: { once: true }, ease: 'easeIn',
     });
   }, [isInView]);
 
