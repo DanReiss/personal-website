@@ -6,12 +6,16 @@ import { TextSM } from './Typography';
 function ProjectItem({ itemdata }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const gifVideo = useRef(null);
 
   useEffect(() => {
     if (isInView) {
       animate(ref.current, { opacity: [0, 1], transform: ['scale(0.6)', 'scale(1)'] }, {
         delay: 0.1,
       });
+      const gifSource = gifVideo.current.querySelector('source');
+      gifSource.src = gifSource.dataset.src;
+      gifVideo.current.load();
     }
   }, [isInView]);
 
@@ -32,7 +36,7 @@ function ProjectItem({ itemdata }) {
             autoPlay
             loop
             muted
-            ref={ref}
+            ref={gifVideo}
             className="object-cover w-full h-full rounded-lg"
           >
             <source data-src={itemdata.gif} />
