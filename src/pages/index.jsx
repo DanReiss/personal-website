@@ -100,7 +100,7 @@ function Home({ projects }) {
           initial={{ scale: 1.5, filter: 'blur(9px)' }}
           animate={{ scale: 1, filter: 'blur(3px)' }}
           transition={{ duration: 0.7, type: 'spring' }}
-          className="z-[-1] absolute left-0 hidden md:block bottom-[15vh] w-screen"
+          className="z-[-1] absolute left-0 hidden md:block bottom-[5vh] w-screen"
         >
           <Image
             src="/images/city.svg"
