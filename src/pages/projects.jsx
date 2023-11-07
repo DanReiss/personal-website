@@ -37,7 +37,7 @@ function Projects({ projects }) {
       <Head>
         <title>Danilo dos Reis Amaral | Projetos</title>
       </Head>
-      <div className="w-full min-h-screen text-white bg-dark_blue px-6 py-12">
+      <div className="w-full flex-1 text-white bg-dark_blue px-6 py-12">
         <div className="container">
           <Title2 withDecoration>Projetos</Title2>
           <Text className="mb-4">

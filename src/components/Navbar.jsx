@@ -27,7 +27,7 @@ function Navbar({ active }) {
   };
 
   return (
-    <div className="sticky top-0 w-full z-10 text-white font-light tracking-widest lg:bg-dark_gray lg:flex lg:flex-row lg:px-16">
+    <div className="sticky top-0 w-full z-10 text-white tracking-widest lg:bg-dark_gray lg:flex lg:flex-row lg:px-16">
       <div className="relative z-20 w-full lg:w-1/2 flex flex-row justify-between items-center bg-dark_gray p-4 px-5 lg:p-0">
         <Link href="/">
           <Image

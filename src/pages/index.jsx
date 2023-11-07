@@ -125,16 +125,23 @@ function Home({ projects }) {
         <motion.section {...opacityProps} className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <div className="mb-8 md:mb-12 container">
             <Title2 withDecoration>Sobre Mim</Title2>
-            <h4 className="mb-3 text-lg md:text-xl">Desenvolvedor Web Front-End</h4>
+            <div className="flex mb-3">
+              <Image
+                src="/icons/suitcase.svg"
+                height={20}
+                width={20}
+                alt="occupation icon"
+              />
+              <h4 className="ml-3 md:text-lg">Desenvolvedor Web</h4>
+            </div>
             <div className="flex mb-3">
               <Image
                 src="/icons/location.svg"
-                height={16.4}
-                width={13}
+                height={18}
+                width={18}
                 alt="location icon"
-                className="w-fit"
               />
-              <h4 className="ml-2 md:text-lg">Brasília-DF</h4>
+              <h4 className="ml-3 md:text-lg">Brasília-DF</h4>
             </div>
             <p className="text-neutral-200 md:text-lg">
               Sempre tive afinidade com tecnologia e a internet desde muito novo e procurando

@@ -63,7 +63,7 @@
     {
       "name": "Bootstrap Page",
       "year": 2022,
-      "description": "Website Fictício de uma empresa de cursos e aulas online. Foi desenvolvido usando classes do framework Bootstrap, dessa forma pude me introduzir no framework na prática.",
+      "description": "Website Fictício de uma empresa de cursos e aulas online. Foi estilizado usando somente classes do framework Bootstrap, dessa forma pude me introduzir no framework na prática.",
       "tags": ["bootstrap", "css", "html"],
       "image": "/images/bootstrappage.png",
       "gif": "/gifs/bootstrappage.webm",
@@ -74,7 +74,7 @@
       "name": "PokeSearch",
       "year": 2022,
       "description": "Projeto para visualizar e pesquisar por pokemons. O usuário pode visualizar os pokemons em ordem crescente do número de identidade ou pode pesquisar pelo nome ou número de identidade.",
-      "tags": ["javascript", "css", "html", "external api"],
+      "tags": ["javascript", "css", "html", "bootstrap", "external api"],
       "image": "/images/pokesearch.png",
       "gif": "/gifs/pokesearch.webm",
       "githuburl": "https://github.com/DanReiss/Pokedex-PokeSearch",
@@ -99,16 +99,6 @@
       "gif": "/gifs/relogiodigital.webm",
       "githuburl": "https://github.com/DanReiss/Relogio-Digital-JS",
       "vercelurl": "https://relogiodigital-danreiss.vercel.app"
-    },
-    {
-      "name": "Jogo da Memória",
-      "year": 2022,
-      "description": "Jogo da Memória feito com JavaScript em aula do curso Programador-BR. As cartas possuem animações 3D.",
-      "tags": ["javascript", "css", "html"],
-      "image": "/images/jogodamemoriapgbr.png",
-      "gif": "/gifs/jogodamemoriapgbr.webm",
-      "githuburl": "https://github.com/DanReiss/Jogo-da-Memoria-PGBR",
-      "vercelurl": "https://jogodamemoriapgbr-danreiss.vercel.app"
     },
     {
       "name": "Simple Calculator",

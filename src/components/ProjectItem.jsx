@@ -63,7 +63,7 @@ function ProjectItem({ itemdata }) {
           target="_blank"
           rel="noreferrer"
         >
-          <h4 className="font-josefin text-xl mt-1">{itemdata.name}</h4>
+          <h4 className="font-josefin text-xl mt-2 mb-1">{itemdata.name}</h4>
         </a>
         <TextSM>{itemdata.description}</TextSM>
       </div>

@@ -3,15 +3,15 @@ import React from 'react';
 function Title2({ children: content, withDecoration, className }) {
   if (withDecoration) {
     return (
-      <div className={`flex mb-6 md:mb-6 ${className}`}>
-        <h3 className="font-josefin text-3xl md:text-4xl tracking-wide">{content}</h3>
+      <div className={`flex mb-6 md:mb-8 ${className}`}>
+        <h3 className="font-josefin text-3xl md:text-[2.25rem] font-bold tracking-wide">{content}</h3>
         <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2 md:ml-4" />
       </div>
     );
   }
 
   return (
-    <h3 className={`font-josefin text-3xl md:text-4xl tracking-wide mb-6 md:mb-6 ${className}`}>{content}</h3>
+    <h3 className={`font-josefin text-3xl md:text-[2.25rem] font-bold tracking-wide mb-6 md:mb-8 ${className}`}>{content}</h3>
   );
 }
 

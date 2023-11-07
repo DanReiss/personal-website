@@ -2,6 +2,7 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import Head from 'next/head';
+import { Title2 } from '@/components/Typography';
 
 function Contact() {
   return (
@@ -11,10 +12,7 @@ function Contact() {
       </Head>
       <div className="w-full min-h-screen text-white bg-dark_blue px-6 py-12">
         <div className="container">
-          <div className="flex mb-2">
-            <h3 className="font-josefin text-3xl tracking-wide">Contato</h3>
-            <span className="bg-blue w-full h-1 inline-block flex-1 m-auto ml-2" />
-          </div>
+          <Title2 withDecoration>Contato</Title2>
           <p className="text-neutral-200 md:text-lg">
             Interessado(a) em tentar algo?
             Me mande uma mensagem ao preencher o formulário abaixo,
