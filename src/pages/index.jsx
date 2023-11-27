@@ -193,6 +193,13 @@ function Home({ projects }) {
                 </span>
                 <br />
               </div>
+              <div className="flex flex-col">
+                <span>06/23</span>
+                <hr className="text-blue" />
+                <span>07/23</span>
+              </div>
+              <span className="w-2 h-2 bg-white rounded-full" />
+              <span className="text-neutral-200">Banco de Dados: Fundamentos - Aprenda Mais - Bancos de dados relacionais</span>
             </div>
           </div>
         </motion.section>

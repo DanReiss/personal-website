@@ -81,16 +81,6 @@
       "vercelurl": "https://pokesearch-danreiss.vercel.app"
     },
     {
-      "name": "To Do List V2-React",
-      "year": 2022,
-      "description": "Lista de afazeres ou To-Do List. O usuário pode adicionar tarefas, marcar-las como concluídas, ou excluir-las.",
-      "tags": ["react", "javascript", "tailwind", "html"],
-      "image": "/images/todov2.png",
-      "gif": "/gifs/todov2.webm",
-      "githuburl": "https://github.com/DanReiss/Todo-React-Tailwind",
-      "vercelurl": "https://todolistv2-danreiss.vercel.app"
-    },
-    {
       "name": "Relógio Digital",
       "year": 2022,
       "description": "Relógio digital desenvolvido para praticar manipulação de datas no Javascript.",
@@ -101,17 +91,7 @@
       "vercelurl": "https://relogiodigital-danreiss.vercel.app"
     },
     {
-      "name": "Simple Calculator",
-      "year": 2022,
-      "description": "Calculadora simples usando JavaScript. O usuário pode fazer operações de uma calculadora comum.",
-      "tags": ["javascript", "css", "html"],
-      "image": "/images/simplecalculator.png",
-      "gif": "/gifs/simplecalculator.webm",
-      "githuburl": "https://github.com/DanReiss/Calculadora-Simples-JS",
-      "vercelurl": "https://simplecalculator-danreiss.vercel.app"
-    },
-    {
-      "name": "To Do List V1-Javascript",
+      "name": "To Do List Javascript",
       "year": 2022,
       "description": "Lista de afazeres ou To-Do List desenvolvida usando como base projeto desenvolvido por Matheus Battisti. O usuário pode adicionar tarefas, marcar-las como concluídas, editar-las ou excluir-las.",
       "tags": ["javascript", "css", "html"],
