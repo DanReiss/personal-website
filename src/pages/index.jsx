@@ -122,14 +122,14 @@ function Home({ projects }) {
       <div className="h-[85vh] w-full" />
       <main className="relative bg-gray">
         <span className="bg-dark_blue w-full h-1 inline-block" />
-        <motion.section {...opacityProps} className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <div className="mb-8 md:mb-12 container">
+        <div className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
+          <motion.section {...opacityProps} className="mb-8 md:mb-12 container">
             <Title2 withDecoration>Sobre Mim</Title2>
             <div className="flex mb-3">
               <Image
                 src="/icons/suitcase.svg"
-                height={20}
-                width={20}
+                height={18}
+                width={18}
                 alt="occupation icon"
               />
               <h4 className="ml-3 md:text-lg">Desenvolvedor Web</h4>
@@ -151,10 +151,17 @@ function Home({ projects }) {
               para me especializar no Desenvolvimento Front-End, enquanto também
               estou dedicando tempo ao estudo de Bancos de Dados, NodeJS e Algoritmos.
             </p>
-          </div>
-          <div className="container">
+          </motion.section>
+          <motion.section {...opacityProps} className="container">
             <Title2>Acadêmico</Title2>
             <div className="relative grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5 md:gap-6 md:text-lg">
+              <div className="flex flex-col">
+                <span>06/23</span>
+                <hr className="text-blue" />
+                <span>07/23</span>
+              </div>
+              <span className="w-2 h-2 bg-white rounded-full" />
+              <span className="text-neutral-200">Banco de Dados: Fundamentos - Aprenda Mais - Bancos de dados relacionais</span>
               <div className="flex flex-col">
                 <span>06/25</span>
                 <hr className="text-blue" />
@@ -193,16 +200,9 @@ function Home({ projects }) {
                 </span>
                 <br />
               </div>
-              <div className="flex flex-col">
-                <span>06/23</span>
-                <hr className="text-blue" />
-                <span>07/23</span>
-              </div>
-              <span className="w-2 h-2 bg-white rounded-full" />
-              <span className="text-neutral-200">Banco de Dados: Fundamentos - Aprenda Mais - Bancos de dados relacionais</span>
             </div>
-          </div>
-        </motion.section>
+          </motion.section>
+        </div>
         <section className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 withDecoration className="container">Competências</Title2>
           <motion.div {...opacityProps} className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center container pt-5">
@@ -220,9 +220,7 @@ function Home({ projects }) {
         </section>
         <motion.section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 className="container">Projetos Recentes</Title2>
-          { projectsData
-            ? <ProjectsCarousel projects={projectsData} />
-            : ''}
+          { projectsData && <ProjectsCarousel projects={projectsData} />}
         </motion.section>
       </main>
     </>

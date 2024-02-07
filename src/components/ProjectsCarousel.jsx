@@ -1,25 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import {
-  animate, useInView, stagger,
-} from 'framer-motion';
 
 function ProjectsCarousel({ projects }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  useEffect(() => {
-    animate('[data-animate]', { left: ['-600px', '0px'], opacity: [0, 1], filter: ['blur(10px)', 'none'] }, {
-      duration: 0.2, delay: stagger(0.1), viewport: { once: true }, ease: 'easeIn',
-    });
-  }, [isInView]);
-
   return (
   /* Wrapper */
     <div className="relative container overflow-hidden m-auto py-12">
       {/* Container */}
-      <div ref={ref} className="container flex flex-row md:justify-between align-center overflow-auto gap-3 lg:gap-0">
+      <div className="container flex flex-row md:justify-between align-center overflow-auto gap-3 lg:gap-0">
         {
           projects.map((project) => (
             <div key={project.name} data-animate className="group relative shrink-0 w-[145px] lg:w-[18%] md:h-full aspect-[3/4] hover:border-2 hover:border-blue transition duration-300">
