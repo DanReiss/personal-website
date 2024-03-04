@@ -6,6 +6,48 @@ import ItemSkill from '@/components/ItemSkill';
 import ProjectsCarousel from '@/components/ProjectsCarousel';
 import { Title2 } from '@/components/Typography';
 
+const skills = [
+  {
+    name: 'Javascript',
+    imagePath: '/icons/js.svg',
+    description: 'Linguagem de programação usada para tornar sites interativos.',
+  },
+  {
+    name: 'React',
+    imagePath: '/icons/react.svg',
+    description: 'Biblioteca JavaScript para construir interfaces de usuário interativas em páginas web.',
+  },
+  {
+    name: 'HTML',
+    imagePath: '/icons/html.svg',
+    description: 'Linguagem usada para criar páginas web, definindo a estrutura e o conteúdo dos elementos na internet.',
+  },
+  {
+    name: 'CSS',
+    imagePath: '/icons/css.svg',
+    description: 'Utilizado para estilizar páginas web, controlando o layout e a aparência dos elementos, como cores, fontes e espaçamento.',
+  },
+  {
+    name: 'Tailwind',
+    imagePath: '/icons/tailwind.svg',
+    description: 'Framework de estilos utilitários para desenvolvimento web, permitindo estilizar rapidamente elementos.',
+  },
+  {
+    name: 'Git/Github',
+    imagePath: '/icons/git.svg',
+    description: 'Sistema de controle de versão que rastreia alterações no código. Cria versões de um código.',
+  },
+  {
+    name: 'SQL',
+    imagePath: '/icons/database.svg',
+    description: 'Linguagem utilizada para gerenciar e manipular bancos de dados relacionais (em formato de tabela).',
+  },
+  {
+    name: 'REST',
+    description: 'Padrão de arquitetura para comunicações entre sistemas.',
+  },
+];
+
 export async function getStaticProps() {
   const projects = await getStaticData();
 
@@ -206,16 +248,15 @@ function Home({ projects }) {
         <section className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 withDecoration className="container">Competências</Title2>
           <motion.div {...opacityProps} className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center container pt-5">
-            <ItemSkill imagePath="/icons/js.svg" name="JavaScript" />
-            <ItemSkill imagePath="/icons/react.svg" name="React" />
-            <ItemSkill imagePath="/icons/html.svg" name="HTML" />
-            <ItemSkill imagePath="/icons/css.svg" name="CSS" />
-            <ItemSkill imagePath="/icons/tailwind.svg" name="Tailwind" />
-            <ItemSkill imagePath="/icons/sass.svg" name="SASS" />
-            <ItemSkill imagePath="/icons/git.svg" name="Git/Github" />
-            <ItemSkill name="SEO" />
-            <ItemSkill imagePath="/icons/database.svg" name="SQL" />
-            <ItemSkill name="API REST" />
+            {
+              skills.map((skill) => (
+                <ItemSkill
+                  imagePath={skill.imagePath}
+                  name={skill.name}
+                  tooltipDescription={skill.description}
+                />
+              ))
+            }
           </motion.div>
         </section>
         <motion.section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
