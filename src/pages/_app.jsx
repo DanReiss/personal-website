@@ -3,7 +3,7 @@
 import React from 'react';
 import '@/styles/globals.css';
 import Head from 'next/head';
-import { Roboto, Josefin_Sans } from '@next/font/google';
+import { Roboto, Josefin_Sans } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
