@@ -17,7 +17,7 @@ function ProjectsCarousel({ projects }) {
                 src={project.image}
                 alt={`pré-visualização do projeto ${project.name}`}
               />
-              <div className="absolute bottom-0 opacity-0 w-full h-full group-hover:opacity-100 bg-gradient-to-t from-dark_gray transition duration-300">
+              <div className="absolute bottom-0 opacity-0 w-full h-full group-hover:opacity-100 bg-gradient-to-t from-darker_blue transition duration-300">
                 <a
                   href={project.vercelurl}
                   target="_blank"
@@ -33,7 +33,7 @@ function ProjectsCarousel({ projects }) {
             </div>
           ))
          }
-        <div data-animate className="group relative shrink-0 w-[145px] lg:w-[18%] md:h-full aspect-[3/4] bg-dark_gray hover:border-2 hover:border-blue transition duration-300">
+        <div data-animate className="group relative shrink-0 w-[145px] lg:w-[18%] md:h-full aspect-[3/4] bg-darker_blue hover:border-2 hover:border-blue transition duration-300">
           <Link
             href="/projects"
             className="grid place-items-center shrink-0 w-full h-full"

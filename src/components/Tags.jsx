@@ -34,7 +34,7 @@ function Tags({ selectedTags, setSelectedTags }) {
     <div className="font-josefin">
       <div className=" flex row items-center gap-3 px-4 py-2 bg-gray w-fit">
         <select defaultValue="placeholder" onChange={(e) => setSelectValue(e.target.value)} className="text-white bg-gray outline-0">
-          <option value="placeholder" disabled>Select a Tag Here</option>
+          <option value="placeholder" disabled>Filtre os Projetos Aqui</option>
           {
             tagsOptions.map((tagOption) => (
               <option key={tagOption.value} value={tagOption.value}>{tagOption.label}</option>

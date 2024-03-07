@@ -17,7 +17,7 @@ export default function Custom404() {
             provavelmente quebrado ou essa página foi removida.
           </Text>
           <a href="/" className="my-4 sm:my-6">
-            <button type="button" className="p-2 rounded border border-blue bg-blue hover:bg-dark_gray  hover:border-white active:bg-dark_gray active:border-white transition-all">RETORNAR À HOME</button>
+            <button type="button" className="p-2 rounded border border-blue bg-blue hover:bg-darker_blue  hover:border-white active:bg-darker_blue active:border-white transition-all">RETORNAR À HOME</button>
           </a>
         </div>
         <Image

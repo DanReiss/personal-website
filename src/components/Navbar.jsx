@@ -27,8 +27,8 @@ function Navbar({ active }) {
   };
 
   return (
-    <div className="sticky top-0 w-full z-10 text-white tracking-widest lg:bg-dark_gray lg:flex lg:flex-row lg:px-16">
-      <div className="relative z-20 w-full lg:w-1/2 flex flex-row justify-between items-center bg-dark_gray p-4 px-5 lg:p-0">
+    <div className="sticky top-0 w-full z-10 text-white tracking-widest lg:bg-darker_blue lg:flex lg:flex-row lg:px-16">
+      <div className="relative z-20 w-full lg:w-1/2 flex flex-row justify-between items-center bg-darker_blue p-4 px-5 lg:p-0">
         <Link href="/">
           <Image
             src="/icons/logo.svg"
@@ -56,7 +56,7 @@ function Navbar({ active }) {
         animate={navOpen ? 'show' : 'hidden'}
         variants={navList}
         transition={{ type: 'tween', duration: 0.3, ease: 'linear' }}
-        className="w-full z-0 absolute top-[-300px] lg:static border-b-4 border-blue lg:border-0 bg-gray lg:w-1/2 lg:bg-dark_gray p-4 px-5"
+        className="w-full z-0 absolute top-[-300px] lg:static border-b-4 border-blue lg:border-0 bg-gray lg:w-1/2 lg:bg-darker_blue p-4 px-5"
       >
         <ul className="flex flex-col lg:flex-row lg:justify-end text-center uppercase">
           {routesOptions.map((route) => (
@@ -66,7 +66,7 @@ function Navbar({ active }) {
               ${
                 route.route === active
                   ? 'bg-blue mb-2 text-lg'
-                  : 'hover:bg-dark_gray lg:hover:bg-gray'
+                  : 'hover:bg-darker_blue lg:hover:bg-gray'
               } 
               mb-2 lg:mb-0 lg:ml-4 lg:px-4 text-lg transition-all`}
             >

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <footer className="relative w-full bg-dark_gray text-white font-light">
+    <footer className="relative w-full bg-darker_blue text-white font-light">
       <div className="w-full grid grid-cols-12 px-4 md:m-auto md:w-3/4 md:pt-12">
         <div className="py-8 md:py-0 col-span-12 md:col-span-4">
           <h3 className="text-xl font-bold md:mb-1">Danilo dos Reis Amaral</h3>

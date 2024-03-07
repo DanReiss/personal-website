@@ -10,7 +10,7 @@ function Contact() {
       <Head>
         <title>Danilo dos Reis Amaral | Contato</title>
       </Head>
-      <div className="w-full min-h-screen text-white bg-dark_blue px-6 py-12">
+      <div className="w-full min-h-screen text-white bg-dark_blue  px-6 py-12">
         <div className="container">
           <Title2 withDecoration>Contato</Title2>
           <p className="text-neutral-200 md:text-lg">

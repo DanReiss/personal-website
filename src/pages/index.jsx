@@ -77,10 +77,11 @@ function Home({ projects }) {
         <div className="text-white text-center container w-full">
           <Image
             src="/images/maintitle.png"
-            width={500}
-            height={70}
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full max-w-[550px] h-auto m-auto"
             alt="Danilo dos Reis"
-            className="m-auto"
           />
           <motion.hr
             className="my-8"
@@ -170,8 +171,10 @@ function Home({ projects }) {
             <div className="flex mb-3">
               <Image
                 src="/icons/suitcase.svg"
-                height={18}
-                width={18}
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-max h-auto"
                 alt="occupation icon"
               />
               <h4 className="ml-3 md:text-lg">Desenvolvedor Web</h4>
@@ -179,8 +182,10 @@ function Home({ projects }) {
             <div className="flex mb-3">
               <Image
                 src="/icons/location.svg"
-                height={18}
-                width={18}
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-max h-auto"
                 alt="location icon"
               />
               <h4 className="ml-3 md:text-lg">Brasília-DF</h4>
@@ -247,10 +252,11 @@ function Home({ projects }) {
         </div>
         <section className="bg-dark_blue text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 withDecoration className="container">Competências</Title2>
-          <motion.div {...opacityProps} className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center container pt-5">
+          <motion.div {...opacityProps} className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-[4rem] justify-items-center container mt-10 pt-10">
             {
               skills.map((skill) => (
                 <ItemSkill
+                  key={skill.name}
                   imagePath={skill.imagePath}
                   name={skill.name}
                   tooltipDescription={skill.description}
