@@ -20,10 +20,10 @@ a{
 .vertical-line::before{
   content: "";
   position: absolute;
-  bottom: 0;
-  transform: translate(4px, -15%);
-  width: 1px;
-  height: 90%;
+  width: 2px;
+  transform: translate(5px);
+  bottom: 10%;
+  height: 95%;
   background-color: white;
 }
 

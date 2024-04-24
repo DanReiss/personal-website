@@ -204,24 +204,24 @@ function Home({ projects }) {
             <div className="relative grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5 md:gap-6 md:text-lg">
               <div className="flex flex-col">
                 <span>06/23</span>
-                <hr className="text-blue" />
+                <hr />
                 <span>07/23</span>
               </div>
-              <span className="w-2 h-2 bg-white rounded-full" />
+              <span className="w-3 h-3 bg-white rounded-full" />
               <span className="text-neutral-200">Banco de Dados: Fundamentos - Aprenda Mais - Bancos de dados relacionais</span>
               <div className="flex flex-col">
                 <span>06/25</span>
-                <hr className="text-blue" />
+                <hr />
                 <span>01/23</span>
               </div>
-              <span className="w-2 h-2 bg-white rounded-full" />
+              <span className="w-3 h-3 bg-white rounded-full" />
               <span className="text-neutral-200">Análise e Desenvolvimento de Sistemas</span>
               <div className="flex flex-col">
                 <span>10/22</span>
-                <hr className="text-blue" />
+                <hr />
                 <span>05/22</span>
               </div>
-              <span className="w-2 h-2 bg-white rounded-full" />
+              <span className="w-3 h-3 bg-white rounded-full" />
               <div className="text-neutral-200">
                 <span className="sm:after:content-['-']">
                   Desenvolvimento Web - Programador BR
@@ -233,10 +233,10 @@ function Home({ projects }) {
               </div>
               <div className="flex flex-col">
                 <span>10/22</span>
-                <hr className="text-blue" />
+                <hr />
                 <span>05/22</span>
               </div>
-              <span className="w-2 h-2 bg-white rounded-full vertical-line" />
+              <span className="w-3 h-3 bg-white rounded-full vertical-line" />
               <div className="text-neutral-200">
                 <span className="sm:after:content-['-']">
                   RocketSeat Discover - Trilha Fundamentar

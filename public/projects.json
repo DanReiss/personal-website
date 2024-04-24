@@ -31,16 +31,6 @@
       "vercelurl": "https://formultistep-danreiss.vercel.app/"
     },
     {
-      "name": "KanbanBoard",
-      "year": 2022,
-      "description": " 'Kanban Board' digital, método de controle de fluxo de trabalho, muito utilizado por empresas como uma metodologia ágil. O projeto usa o sistema 'Drag and Drop' do JavaScript para que o usuário possa interagir com as tarefas.",
-      "tags": ["javascript", "bootstrap", "css"],
-      "image": "/images/kanban.png",
-      "gif": "/gifs/kanbandesktop.webm",
-      "githuburl": "https://github.com/DanReiss/KanbanBoard/",
-      "vercelurl": "https://kanbanboard-danreiss.vercel.app"
-    },
-    {
       "name": "Player de Música",
       "year": 2022,
       "description": "Player de Música, no qual o usuário pode controlar as faixas, alterando volume, voltando e adiantando a música, entre outras funcionalidades.",
