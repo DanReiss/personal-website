@@ -8,7 +8,8 @@
       "image": "/images/coffeeshop.png",
       "gif": "/gifs/coffeeshop.webm",
       "githuburl": "https://github.com/DanReiss/coffee-beans",
-      "vercelurl": "https://coffee-beans-danreiss.vercel.app"
+      "vercelurl": "https://coffee-beans-danreiss.vercel.app",
+      "starred": true 
     },
     {
       "name": "Pomodoro Timer",
@@ -18,7 +19,8 @@
       "image": "/images/pomodoro.png",
       "gif": "/gifs/pomodoro.webm",
       "githuburl": "https://github.com/DanReiss/pomodoro-timer",
-      "vercelurl": "https://pomodorotimer-danreiss.vercel.app/"
+      "vercelurl": "https://pomodorotimer-danreiss.vercel.app/",
+      "starred": true
     },
     {
       "name": "Formulário MultiStep",
@@ -28,7 +30,8 @@
       "image": "/images/stepform.png",
       "gif": "/gifs/stepform.webm",
       "githuburl": "https://github.com/DanReiss/multistep-form-react",
-      "vercelurl": "https://formultistep-danreiss.vercel.app/"
+      "vercelurl": "https://formultistep-danreiss.vercel.app/",
+      "starred": true 
     },
     {
       "name": "Player de Música",
@@ -38,7 +41,8 @@
       "image": "/images/musicplayer.png",
       "gif": "/gifs/musicplayer.webm",
       "githuburl": "https://github.com/DanReiss/Player-Musica/",
-      "vercelurl": "https://justlisten-danreiss.vercel.app"
+      "vercelurl": "https://justlisten-danreiss.vercel.app",
+      "starred": true
     },
     {
       "name": "Weather Search",

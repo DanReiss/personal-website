@@ -50,7 +50,7 @@ function Projects({ projects }) {
           {
             projectsData.length
               ? (
-                <div className="grid justify-center items-start justify-items-center gap-12 sm:grid-cols-2 lg:grid-cols-3 my-8">
+                <div className="grid justify-center items-start justify-items-center gap-16 sm:grid-cols-2 lg:grid-cols-3 my-8">
                   {
                     projectsData.map((itemdata) => (
                       <ProjectItem key={itemdata.name} itemdata={itemdata} />

@@ -22,9 +22,9 @@ function ProjectItem({ itemdata }) {
   return (
     <div
       ref={ref}
-      className="my-4 max-w-[300px] h-full rounded-3xl p-4 bg-gray"
+      className="my-4 h-full rounded-3xl p-4 bg-gray"
     >
-      <div className="relative max-h-[300px] aspect-[4/4] bg-gray/[0.8]">
+      <div className="relative aspect-[4/4] bg-gray/[0.8]">
         <a
           href={itemdata.vercelurl}
           target="_blank"
