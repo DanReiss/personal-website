@@ -5,6 +5,7 @@ import getStaticData from 'lib/getStaticData';
 import ItemSkill from '@/components/ItemSkill';
 import ProjectsCarousel from '@/components/ProjectsCarousel';
 import { Title2 } from '@/components/Typography';
+import AcademicTimeline from '@/components/AcademicTimeline';
 
 const skills = [
   {
@@ -46,6 +47,14 @@ const skills = [
     name: 'REST',
     description: 'Padrão de arquitetura para comunicações entre sistemas.',
   },
+  {
+    name: 'Node.js',
+    description: 'Plataforma Javascript para criação de aplicativos de rede',
+  },
+  {
+    name: 'Jest',
+    description: 'Framework de testes em Javascript',
+  },
 ];
 
 export async function getStaticProps() {
@@ -75,14 +84,14 @@ function Home({ projects }) {
     <>
       <div className="fixed h-[85vh] w-full flex flex-col justify-evenly p-4 bg-dark_blue">
         <section className="w-full container flex flex-col lg:flex-row justify-between items-center gap-6 text-center text-white">
-          <div className="flex-1 max-w-[25rem] md:max-w-[27.5rem] h-full rounded-xl bg-white aspect-square">
+          <div className="flex-1 max-w-[25rem] md:max-w-[27.5rem] h-full rounded-xl aspect-square">
             <Image
               src="/images/banner.png"
               alt="banner"
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-full rounded-2xl object-cover"
+              className="w-full h-full rounded-3xl object-cover"
             />
           </div>
           <div className="flex-1 h-[75%] flex flex-col justify-evenly h-full gap-4 lg:gap-0 items-center my-3 ">
@@ -154,18 +163,18 @@ function Home({ projects }) {
           <motion.section {...opacityProps} className="w-full container flex flex-col lg:flex-row justify-between gap-20 text-white mb-8 md:mb-12 container">
             <div className="flex-1">
               <Title2 withDecoration>Sobre Mim</Title2>
-              <div className="flex mb-3">
+              <div className="flex mb-4">
                 <Image
                   src="/icons/suitcase.svg"
-                  width={0}
-                  height={0}
+                  width={3}
+                  height={3}
                   sizes="100vw"
                   className="w-max h-auto"
                   alt="occupation icon"
                 />
                 <h4 className="ml-3 md:text-lg">Desenvolvedor Web</h4>
               </div>
-              <div className="flex mb-3">
+              <div className="flex mb-4">
                 <Image
                   src="/icons/location.svg"
                   width={0}
@@ -176,13 +185,28 @@ function Home({ projects }) {
                 />
                 <h4 className="ml-3 md:text-lg">Brasília-DF</h4>
               </div>
-              <p className="text-neutral-200 md:text-lg">
-                Sempre tive afinidade com tecnologia e a internet desde muito novo e procurando
+              <p className="text-neutral-200 md:text-lg mb-3">
+                Sempre tive
+                {' '}
+                <b>afinidade com  tecnologia e Internet</b>
+                {' '}
+                desde muito novo e procurando
                 por algo nesse sentido encontrei a programação. Além da tecnologia,
-                tenho uma paixão pela arte, especialmente músicas e narrativas. Atualmente,
-                meu foco está em aprofundar meu conhecimento em JavaScript e ReactJS,
-                para me especializar no Desenvolvimento Front-End, enquanto também
-                estou dedicando tempo ao estudo de Bancos de Dados, NodeJS e Algoritmos.
+                tenho uma paixão pela
+                {' '}
+                <b>arte</b>
+                , especialmente músicas e narrativas. Atualmente,
+                meu foco está em aprofundar meu conhecimento em
+                {' '}
+                <b>JavaScript e ReactJS</b>
+                ,
+                {' '}
+                para me especializar no Desenvolvimento
+                Front-End, enquanto também
+                estou dedicando tempo ao estudo de
+                {' '}
+                <b> Bancos de Dados, NodeJS e Algoritmos</b>
+                .
               </p>
             </div>
             <div className="flex-1">
@@ -201,57 +225,8 @@ function Home({ projects }) {
               </motion.div>
             </div>
           </motion.section>
-          <motion.section {...opacityProps} className="container">
-            <Title2>Acadêmico</Title2>
-            <div className="relative grid grid-cols-[min-content_8px_auto] items-center gap-x-2 gap-y-5 md:gap-6 md:text-lg">
-              <div className="flex flex-col">
-                <span>06/23</span>
-                <hr />
-                <span>07/23</span>
-              </div>
-              <span className="w-3 h-3 bg-white rounded-full" />
-              <span className="text-neutral-200">Banco de Dados: Fundamentos - Aprenda Mais - Bancos de dados relacionais</span>
-              <div className="flex flex-col">
-                <span>06/25</span>
-                <hr />
-                <span>01/23</span>
-              </div>
-              <span className="w-3 h-3 bg-white rounded-full" />
-              <span className="text-neutral-200">Análise e Desenvolvimento de Sistemas</span>
-              <div className="flex flex-col">
-                <span>10/22</span>
-                <hr />
-                <span>05/22</span>
-              </div>
-              <span className="w-3 h-3 bg-white rounded-full" />
-              <div className="text-neutral-200">
-                <span className="sm:after:content-['-']">
-                  Desenvolvimento Web - Programador BR
-                </span>
-                <br className="sm:hidden" />
-                <span>
-                  JavaScript, CSS, HTML, ReactJS
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span>10/22</span>
-                <hr />
-                <span>05/22</span>
-              </div>
-              <span className="w-3 h-3 bg-white rounded-full vertical-line" />
-              <div className="text-neutral-200">
-                <span className="sm:after:content-['-']">
-                  RocketSeat Discover - Trilha Fundamentar
-                </span>
-                <br className="sm:hidden" />
-                <span>
-                  SEO, Git/Github, SQL, NodeJS
-                </span>
-                <br />
-              </div>
-            </div>
-          </motion.section>
         </div>
+        <AcademicTimeline />
         <motion.section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 className="container">Principais Projetos</Title2>
           { projectsData && <ProjectsCarousel projects={projectsData} />}
