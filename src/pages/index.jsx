@@ -40,7 +40,7 @@ const skills = [
   },
   {
     name: 'SQL',
-    imagePath: '/icons/database.svg',
+    imagePath: '/icons/database-color.svg',
     description: 'Linguagem utilizada para gerenciar e manipular bancos de dados relacionais (em formato de tabela).',
   },
   {
@@ -49,10 +49,12 @@ const skills = [
   },
   {
     name: 'Node.js',
+    imagePath: '/icons/nodejs.svg',
     description: 'Plataforma Javascript para criação de aplicativos de rede',
   },
   {
     name: 'Jest',
+    imagePath: '/icons/jest.svg',
     description: 'Framework de testes em Javascript',
   },
 ];
@@ -227,6 +229,55 @@ function Home({ projects }) {
           </motion.section>
         </div>
         <AcademicTimeline />
+        <section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
+          <Title2 className="container">Meus Serviços</Title2>
+          <div className="container flex flex-col md:flex-row gap-8">
+            <div className="bg-dark_blue w-full h-full p-8 aspect-square">
+              <Image
+                width={80}
+                height={80}
+                src="./icons/git-white.svg"
+              />
+              <h3 className="text-2xl font-bold my-5">Controle de Versão</h3>
+              <p>
+                O versionamento de código é uma prática essencial para garantir
+                a integridade, rastreabilidade e eficiência no desenvolvimento de software.
+                Faço esse versionamento utilizando Git e GitHub, utilizando,
+                por exemplo, branchs, merges, pull requests.
+              </p>
+            </div>
+            <div className="bg-dark_blue w-full h-full p-8 aspect-square">
+              <Image
+                width={80}
+                height={80}
+                src="./icons/web.svg"
+              />
+              <h3 className="text-2xl font-bold my-5">
+                Desenvolvimento Web
+                FullStack
+              </h3>
+              <p>
+                Desenvolvimento Full Stack, desde a criação de interfaces
+                de usuário intuitivas e responsivas até a construção de APIs
+                robustas e escaláveis. Busco utilizar algoritmos eficientes,
+                além da arquitetura e do paradigma de programação ideais para cada projeto.
+              </p>
+            </div>
+            <div className="bg-dark_blue w-full h-full p-8 aspect-square">
+              <Image
+                width={80}
+                height={80}
+                src="./icons/database-vetor.svg"
+              />
+              <h3 className="text-2xl font-bold my-5">Criação e integração com Bancos de Dados</h3>
+              <p>
+                Ofereço serviços completos de criação de bancos de dados utilizando
+                SQL(MySQL), MongoDB ou Redis. Desde a modelagem até a implementação e
+                integração, atendendo às necessidades específicas do seu projeto.
+              </p>
+            </div>
+          </div>
+        </section>
         <motion.section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
           <Title2 className="container">Principais Projetos</Title2>
           { projectsData && <ProjectsCarousel projects={projectsData} />}
