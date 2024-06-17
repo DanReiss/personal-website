@@ -96,7 +96,7 @@ function Home({ projects }) {
               className="w-full h-full rounded-3xl object-cover"
             />
           </div>
-          <div className="flex-1 h-[75%] flex flex-col justify-evenly h-full gap-4 lg:gap-0 items-center my-3 ">
+          <div className="flex-1 flex flex-col justify-evenly h-full gap-6 lg:gap-0 items-center my-3">
             <Image
               src="/images/maintitle.png"
               width={0}
@@ -105,8 +105,8 @@ function Home({ projects }) {
               className="w-full max-w-[700px]"
               alt="Danilo dos Reis"
             />
-            <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold font-josefin">DESENVOLVEDOR WEB</h2>
-            <div className="flex flex-row justify-around w-full max-w-[90%] sm:max-w-[75%] md:max-w-[65%] bg-white rounded-full px-2 py-1 sm:px-8 py-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-josefin">DESENVOLVEDOR WEB</h2>
+            <div className="flex flex-row justify-around w-full max-w-[90%] sm:max-w-[65%] lg:max-w-[60%] bg-white rounded-full p-2 sm:px-4 sm:py-2 md:px-0 md:py-6">
               <motion.a
                 href="https://github.com/DanReiss"
                 target="__blank"
@@ -273,7 +273,7 @@ function Home({ projects }) {
               <p>
                 Ofereço serviços completos de criação de bancos de dados utilizando
                 SQL(MySQL), MongoDB ou Redis. Desde a modelagem até a implementação e
-                integração, atendendo às necessidades específicas do seu projeto.
+                integração, atendendo às necessidades específicas do projeto.
               </p>
             </div>
           </div>
