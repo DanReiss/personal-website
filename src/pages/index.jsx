@@ -83,8 +83,8 @@ function Home({ projects }) {
   };
 
   return (
-    <>
-      <div className="fixed h-[85vh] w-full flex flex-col justify-evenly p-4 bg-dark_blue">
+    <main className="relative bg-dark_blue">
+      <div className="h-[85vh] w-full flex flex-col justify-evenly p-4 bg-darker_blue">
         <section className="w-full container flex flex-col lg:flex-row justify-between items-center gap-6 text-center text-white">
           <div className="flex-1 max-w-[25rem] md:max-w-[27.5rem] h-full rounded-xl aspect-square">
             <Image
@@ -157,64 +157,61 @@ function Home({ projects }) {
           </div>
         </section>
       </div>
-      {/* mostrar o background e espaçar a segunda seção -> */}
-      <div className="h-[75vh] w-full" />
-      <main className="relative bg-gray">
-        <span className="bg-dark_blue w-full h-1 inline-block" />
-        <div className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <motion.section {...opacityProps} className="w-full container flex flex-col lg:flex-row justify-between gap-20 text-white mb-8 md:mb-12 container">
-            <div className="flex-1">
-              <Title2 withDecoration>Sobre Mim</Title2>
-              <div className="flex mb-4">
-                <Image
-                  src="/icons/suitcase.svg"
-                  width={3}
-                  height={3}
-                  sizes="100vw"
-                  className="w-max h-auto"
-                  alt="occupation icon"
-                />
-                <h4 className="ml-3 md:text-lg">Desenvolvedor Web</h4>
-              </div>
-              <div className="flex mb-4">
-                <Image
-                  src="/icons/location.svg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-max h-auto"
-                  alt="location icon"
-                />
-                <h4 className="ml-3 md:text-lg">Brasília-DF</h4>
-              </div>
-              <p className="text-neutral-200 md:text-lg mb-3">
-                Sempre tive
-                {' '}
-                <b>afinidade com  tecnologia e Internet</b>
-                {' '}
-                desde muito novo e procurando
-                por algo nesse sentido encontrei a programação. Além da tecnologia,
-                tenho uma paixão pela
-                {' '}
-                <b>arte</b>
-                , especialmente músicas e narrativas. Atualmente,
-                meu foco está em aprofundar meu conhecimento em
-                {' '}
-                <b>JavaScript e ReactJS</b>
-                ,
-                {' '}
-                para me especializar no Desenvolvimento
-                Front-End, enquanto também
-                estou dedicando tempo ao estudo de
-                {' '}
-                <b> Bancos de Dados, NodeJS e Algoritmos</b>
-                .
-              </p>
+      <span className="bg-darker_blue w-full h-1 inline-block" />
+      <div className="text-white px-4 sm:px-6 md:px-8 py-8 md:py-12">
+        <motion.section {...opacityProps} className="w-full container flex flex-col lg:flex-row justify-between gap-20 text-white mb-8 md:mb-12 container">
+          <div className="flex-1">
+            <Title2 withDecoration>Sobre Mim</Title2>
+            <div className="flex mb-4">
+              <Image
+                src="/icons/suitcase.svg"
+                width={3}
+                height={3}
+                sizes="100vw"
+                className="w-max h-auto"
+                alt="occupation icon"
+              />
+              <h4 className="ml-3 md:text-lg">Desenvolvedor Web</h4>
             </div>
-            <div className="flex-1">
-              <Title2 withDecoration className="container">Competências</Title2>
-              <motion.div {...opacityProps} className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-[4rem] justify-items-center container mt-10 pt-10">
-                {
+            <div className="flex mb-4">
+              <Image
+                src="/icons/location.svg"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-max h-auto"
+                alt="location icon"
+              />
+              <h4 className="ml-3 md:text-lg">Brasília-DF</h4>
+            </div>
+            <p className="text-neutral-200 md:text-lg mb-3">
+              Sempre tive
+              {' '}
+              <b>afinidade com  tecnologia e Internet</b>
+              {' '}
+              desde muito novo e procurando
+              por algo nesse sentido encontrei a programação. Além da tecnologia,
+              tenho uma paixão pela
+              {' '}
+              <b>arte</b>
+              , especialmente músicas e narrativas. Atualmente,
+              meu foco está em aprofundar meu conhecimento em
+              {' '}
+              <b>JavaScript e ReactJS</b>
+              ,
+              {' '}
+              para me especializar no Desenvolvimento
+              Front-End, enquanto também
+              estou dedicando tempo ao estudo de
+              {' '}
+              <b> Bancos de Dados, NodeJS e Algoritmos</b>
+              .
+            </p>
+          </div>
+          <div className="flex-1">
+            <Title2 withDecoration className="container">Competências</Title2>
+            <motion.div {...opacityProps} className="font-josefin grid grid-cols-2 md:grid-cols-3 gap-[4rem] justify-items-center container mt-10 pt-10">
+              {
               skills.map((skill) => (
                 <ItemSkill
                   key={skill.name}
@@ -224,66 +221,65 @@ function Home({ projects }) {
                 />
               ))
             }
-              </motion.div>
-            </div>
-          </motion.section>
-        </div>
-        <AcademicTimeline />
-        <section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <Title2 className="container">Meus Serviços</Title2>
-          <div className="container flex flex-col md:flex-row gap-8">
-            <div className="bg-dark_blue w-full h-full p-8 aspect-square">
-              <Image
-                width={80}
-                height={80}
-                src="./icons/git-white.svg"
-              />
-              <h3 className="text-2xl font-bold my-5">Controle de Versão</h3>
-              <p>
-                O versionamento de código é uma prática essencial para garantir
-                a integridade, rastreabilidade e eficiência no desenvolvimento de software.
-                Faço esse versionamento utilizando Git e GitHub, utilizando,
-                por exemplo, branchs, merges, pull requests.
-              </p>
-            </div>
-            <div className="bg-dark_blue w-full h-full p-8 aspect-square">
-              <Image
-                width={80}
-                height={80}
-                src="./icons/web.svg"
-              />
-              <h3 className="text-2xl font-bold my-5">
-                Desenvolvimento Web
-                FullStack
-              </h3>
-              <p>
-                Desenvolvimento Full Stack, desde a criação de interfaces
-                de usuário intuitivas e responsivas até a construção de APIs
-                robustas e escaláveis. Busco utilizar algoritmos eficientes,
-                além da arquitetura e do paradigma de programação ideais para cada projeto.
-              </p>
-            </div>
-            <div className="bg-dark_blue w-full h-full p-8 aspect-square">
-              <Image
-                width={80}
-                height={80}
-                src="./icons/database-vetor.svg"
-              />
-              <h3 className="text-2xl font-bold my-5">Criação e integração com Bancos de Dados</h3>
-              <p>
-                Ofereço serviços completos de criação de bancos de dados utilizando
-                SQL(MySQL), MongoDB ou Redis. Desde a modelagem até a implementação e
-                integração, atendendo às necessidades específicas do projeto.
-              </p>
-            </div>
+            </motion.div>
           </div>
-        </section>
-        <motion.section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
-          <Title2 className="container">Principais Projetos</Title2>
-          { projectsData && <ProjectsCarousel projects={projectsData} />}
         </motion.section>
-      </main>
-    </>
+      </div>
+      <AcademicTimeline />
+      <section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
+        <Title2 className="container">Meus Serviços</Title2>
+        <div className="container flex flex-col md:flex-row gap-8">
+          <div className="bg-gray w-full h-full p-8 aspect-square">
+            <Image
+              width={80}
+              height={80}
+              src="./icons/git-white.svg"
+            />
+            <h3 className="text-2xl font-bold my-5">Controle de Versão</h3>
+            <p>
+              O versionamento de código é uma prática essencial para garantir
+              a integridade, rastreabilidade e eficiência no desenvolvimento de software.
+              Faço esse versionamento utilizando Git e GitHub, utilizando,
+              por exemplo, branchs, merges, pull requests.
+            </p>
+          </div>
+          <div className="bg-gray w-full h-full p-8 aspect-square">
+            <Image
+              width={80}
+              height={80}
+              src="./icons/web.svg"
+            />
+            <h3 className="text-2xl font-bold my-5">
+              Desenvolvimento Web
+              FullStack
+            </h3>
+            <p>
+              Desenvolvimento Full Stack, desde a criação de interfaces
+              de usuário intuitivas e responsivas até a construção de APIs
+              robustas e escaláveis. Busco utilizar algoritmos eficientes,
+              além da arquitetura e do paradigma de programação ideais para cada projeto.
+            </p>
+          </div>
+          <div className="bg-gray w-full h-full p-8 aspect-square">
+            <Image
+              width={80}
+              height={80}
+              src="./icons/database-vetor.svg"
+            />
+            <h3 className="text-2xl font-bold my-5">Criação e integração com Bancos de Dados</h3>
+            <p>
+              Ofereço serviços completos de criação de bancos de dados utilizando
+              SQL(MySQL), MongoDB ou Redis. Desde a modelagem até a implementação e
+              integração, atendendo às necessidades específicas do projeto.
+            </p>
+          </div>
+        </div>
+      </section>
+      <motion.section className="text-white font-josefin px-4 sm:px-6 md:px-8 py-8 md:py-12">
+        <Title2 className="container">Principais Projetos</Title2>
+        { projectsData && <ProjectsCarousel projects={projectsData} />}
+      </motion.section>
+    </main>
   );
 }
 

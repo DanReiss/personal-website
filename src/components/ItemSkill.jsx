@@ -8,7 +8,7 @@ function ItemSkill({ imagePath, name, tooltipDescription }) {
     <>
       <div
         data-tooltip-id={`${name}-tooltip`}
-        className="w-full max-w-[165px] min-h-[40px] bg-gradient-to-r from-blue from-[15px] to-dark_blue to-[15px] bg-dark_gray relative px-3.5 py-2.5"
+        className="w-full max-w-[165px] min-h-[40px] bg-gradient-to-r from-blue from-[15px] to-gray to-[15px] bg-dark_gray relative px-3.5 py-2.5"
       >
         {
         imagePath && (
